@@ -122,46 +122,46 @@ body {
     margin-bottom: 40px;
 }
 
+/* Grid layout for experience items */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 20px; /* Space between the squares */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Each block is 400px wide */
+    gap: 20px; /* Space between items */
     justify-items: center;
 }
 
+/* Experience item styling */
 .experience-item {
-    width: 250px;
-    height: 250px;
-    border-radius: 15px; /* Rounded corners */
-    overflow: hidden; /* Ensure content stays within the rounded corners */
+    width: 400px;
+    height: 300px;
+    border-radius: 15px;
+    border: 2px solid black; /* Black border */
+    overflow: hidden; /* Ensure content stays within rounded borders */
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     display: flex;
     flex-direction: column;
 }
 
-.experience-banner {
-    background-color: #3498db; /* Banner color */
-    color: white;
-    padding: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50%; /* Top 50% for the banner */
+/* Banner Image */
+.experience-banner img {
+    width: 100%; /* Full width of the block */
+    height: 50%; /* Takes up the top half of the block */
+    object-fit: cover; /* Ensures the image covers the space properly */
 }
 
-.experience-banner h3 {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
-}
-
+/* Description part (bottom half) */
 .experience-description {
     padding: 15px;
-    height: 50%; /* Bottom 50% for the description */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 50%; /* Bottom half of the block */
+}
+
+.experience-description h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 0 10px 0;
 }
 
 .experience-description .details {
@@ -173,7 +173,8 @@ body {
     font-size: 12px;
     font-weight: bold;
     color: #555;
-    margin-top: auto; /* Push the date to the bottom */
+    margin-top: auto; /* Pushes the date to the bottom */
 }
+
 
 
