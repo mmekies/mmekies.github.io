@@ -96,6 +96,7 @@ body {
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    border-color: black;
     font-weight: bold;
     transition: background-color 0.3s;
 }
