@@ -83,6 +83,7 @@ body {
 
 .about-text h1 {
     margin-bottom: 10px;
+    text-decoration: underline;
 }
 
 .about-text p {
@@ -111,7 +112,9 @@ body {
 }
 
 /* Experience Section */
-/* Centering the Grid */
+.experience-section-text  {
+    text-decoration: underline;
+}
 /* Parent container styling */
 .experience-container {
     display: flex;
@@ -125,7 +128,7 @@ body {
     display: grid;
     padding-left: 10%;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px;
+    gap: 75px;
     justify-content: center; /* Center the grid */
 }
 
