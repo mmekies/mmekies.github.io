@@ -1,0 +1,56 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Top bar styling */
+.top-bar {
+    background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black */
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: #f39c12; /* Highlight color */
+}
+
+/* Language selector */
+.language-selector select {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* Section placeholders */
+section {
+    padding: 100px 20px;
+    margin-top: 50px;
+}
