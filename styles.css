@@ -71,8 +71,8 @@ body {
 }
 
 .profile-pic {
-    width: 60px; /* Adjust the size as needed */
-    height: 60px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
 }
@@ -103,7 +103,7 @@ body {
 }
 
 .cv-image:hover {
-    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    transform: scale(1.5); /* Slightly enlarge the image on hover */
 }
 
 
