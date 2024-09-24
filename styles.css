@@ -193,5 +193,51 @@ body {
 }
 
 
+/* Parent container for certificates */
+.certificates-container {
+    display: flex;
+    justify-content: center; /* Center the grid horizontally */
+    align-items: center;     /* Center items vertically if needed */
+    padding: 20px;
+}
+
+/* Certificates grid layout */
+.certificates-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center the grid */
+}
+
+/* Certificate item styling */
+.certificate-item {
+    width: 400px; /* Width of the block */
+    height: 300px; /* Height of the block */
+    border-radius: 15px; /* Rounded corners */
+    overflow: hidden;
+    display: flex; /* Flex display for hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Certificate banner (image) */
+.certificate-banner {
+    width: 100%;
+    height: 100%;
+}
+
+.certificate-banner img {
+    width: 100%; /* Full width of the block */
+    height: 100%; /* Full height of the block */
+    object-fit: cover; /* Ensure image covers the area without stretching */
+}
+
+/* Hover Effect for certificate */
+.certificate-item:hover {
+    transform: scale(1.05); /* Scale the block on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+    z-index: 10; /* Ensure hover item stays on top */
+}
+
+
 
 
