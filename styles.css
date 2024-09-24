@@ -111,23 +111,12 @@ body {
 }
 
 /* Experience Section */
-.experience-section {
-    padding: 60px 20px;
-    background-color: #f4f4f4;
-    text-align: center;
-}
-
-.experience-section h2 {
-    font-size: 32px;
-    margin-bottom: 40px;
-}
-
-/* Grid layout for experience items */
+/* Centering the Grid */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Each block is 400px wide */
-    gap: 20px; /* Space between items */
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+    justify-content: center; /* Center the grid */
 }
 
 /* Experience item styling */
@@ -135,18 +124,25 @@ body {
     width: 400px;
     height: 300px;
     border-radius: 15px;
-    border: 2px solid black; /* Black border */
-    overflow: hidden; /* Ensure content stays within rounded borders */
+    border: 2px solid black;
+    overflow: hidden;
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth scaling */
+}
+
+/* Hover Effect */
+.experience-item:hover {
+    transform: scale(1.25); /* Scale the block on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 /* Banner Image */
 .experience-banner img {
-    width: 100%; /* Full width of the block */
-    height: 50%; /* Takes up the top half of the block */
-    object-fit: cover; /* Ensures the image covers the space properly */
+    width: 100%;
+    height: 150px;
+    object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
 /* Description part (bottom half) */
@@ -155,7 +151,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 50%; /* Bottom half of the block */
 }
 
 .experience-description h3 {
@@ -173,8 +168,15 @@ body {
     font-size: 12px;
     font-weight: bold;
     color: #555;
-    margin-top: auto; /* Pushes the date to the bottom */
+    margin-top: auto;
 }
+
+/* Experience link styling */
+.experience-link {
+    text-decoration: none;
+    color: inherit; /* Keeps text styling consistent */
+}
+
 
 
 
