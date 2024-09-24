@@ -114,6 +114,7 @@ body {
 /* Experience Section */
 .experience-section-text  {
     text-decoration: underline;
+    text-align: center;
 }
 /* Parent container styling */
 .experience-container {
@@ -192,6 +193,10 @@ body {
     color: inherit; /* Keeps text styling consistent */
 }
 
+.certificate-block{
+    text-decoration: underline;
+    text-align: center;
+}
 
 /* Parent container for certificates */
 .certificates-container {
