@@ -492,13 +492,19 @@ body {
 }
 
 /* Common title style */
-.section-title {
+.contact-title {
     font-size: 36px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
     color: black;
+}
+
+.contact-container{
+    display: flex;
+    justify-content: left; /* Center the grid horizontally */
+    gap: 100px;
 }
 
 /* Grid layout for contact form and contact info */
