@@ -211,7 +211,9 @@ body {
 
 /* Skills Section */
 .skills-section {
+    font-family: 'Roboto Condensed', sans-serif;
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min width as needed */
     gap: 20px; /* Space between categories */
     padding: 20px;
@@ -219,10 +221,10 @@ body {
 
 /* Skills Category */
 .skills-category {
-    border: 1px solid #ddd;
-    border-radius: 8px;
+    border: 1px solid #000000;
+    border-radius: 1px;
     padding: 15px;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
 }
 
 /* Skill Item */
