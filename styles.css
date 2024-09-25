@@ -87,20 +87,31 @@ body {
     z-index: -1; /* Send it behind the text */
 }
 
-/* Header Text (Ensure it's not blurred) */
+/* Header Text with Outline */
 .header-section h1 {
     font-size: 48px; /* Adjust font size */
     margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+    text-shadow: 
+        -1px -1px 0px black,  /* Top left shadow */
+        1px -1px 0px black,   /* Top right shadow */
+        -1px 1px 0px black,   /* Bottom left shadow */
+        1px 1px 0px black;    /* Bottom right shadow */
+    color: white;           /* White text color */
     z-index: 2;
 }
 
 .header-section p {
     font-size: 24px; /* Adjust as needed */
     margin: 0;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add shadow to paragraph text */
+    text-shadow: 
+        -1px -1px 0px black,  /* Top left shadow */
+        1px -1px 0px black,   /* Top right shadow */
+        -1px 1px 0px black,   /* Bottom left shadow */
+        1px 1px 0px black;    /* Bottom right shadow */
+    color: white;           /* White text color */
     z-index: 2;
 }
+
 
 /* Social Icons */
 .social-icons {
