@@ -35,13 +35,13 @@ body {
 
 /* Navbar links */
 .navbar a {
-    display: block; /* Make the link a block element */
+    display:block; /* Make the link a block element */
     padding: 10px 15px; /* Space inside the link */
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s; /* Smooth hover transition */
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 0px; /* Optional: rounded corners */
 }
 
 /* Highlight on hover */
@@ -57,6 +57,54 @@ body {
     padding: 5px;
     border-radius: 3px;
 }
+
+/* Header section as a normal scrollable section */
+.header-section {
+    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Path to your large background image */
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px; /* Adjust padding to suit your design */
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header content */
+.header-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Transparent overlay for text visibility */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Name styling */
+.header-name {
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Social icons container */
+.social-icons {
+    margin-top: 20px;
+}
+
+/* Social icons styling */
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+}
+
 
 /* About Me section */
 .about-me {
@@ -126,6 +174,7 @@ body {
 
 .experience-section{
     border-bottom: 2px solid #555;
+    border-width: 50%;
 }
 
 /* Experience Section */
@@ -223,6 +272,7 @@ body {
     padding-left: 10%;
     padding-right: 10%;
     border-bottom: 2px solid #555;
+    border-width: 50%;
 }
 
 .skills-title{
