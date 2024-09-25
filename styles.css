@@ -46,7 +46,7 @@ body {
 
 /* Highlight on hover */
 .navbar a:hover {
-    background-color: rgba(243, 156, 18, 0.8); /* Highlight color */
+    background-color: #b81c1c; /* Highlight color */
 }
 
 /* Language selector */
@@ -211,56 +211,40 @@ body {
 
 /* Skills Section */
 .skills-section {
-    padding: 20px;
-    margin-top: 40px;
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
-}
-
-.skills-title {
-    font-size: 24px;
-    text-decoration: underline;
-    margin-bottom: 20px;
-}
-
-/* Skills Grid */
-.skills-grid {
     display: grid;
-    padding-left: 10%;
-    padding-right: 10%;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-    justify-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min width as needed */
+    gap: 20px; /* Space between categories */
+    padding: 20px;
+}
+
+/* Skills Category */
+.skills-category {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #f4f4f4;
 }
 
 /* Skill Item */
-.skill-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
+.skill {
+    margin: 10px 0; /* Space between skills */
 }
 
-/* Skill Name */
-.skill-name {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* Progress Bar Container */
+.progress {
+    background-color: #e0e0e0; /* Background of the loading bar */
+    border-radius: 5px;
+    height: 20px; /* Height of the loading bar */
+    overflow: hidden; /* Prevent overflow */
 }
 
-/* Stars Container */
-.skill-stars {
-    display: flex;
-    justify-content: center;
+/* Progress Bar */
+.progress-bar {
+    background-color: #b81c1c; /* Green color for the filled portion */
+    height: 100%; /* Fill the height of the progress container */
+    transition: width 0.3s; /* Smooth transition for width change */
 }
 
-/* Star Styling */
-.star {
-    width: 40px; /* Adjust the size of the stars */
-    height: 40px;
-    object-fit: contain;
-    margin: 0 3px; /* Spacing between stars */
-}
 
 
 .certificate-block-text{
