@@ -375,7 +375,7 @@ body {
 }
 
 
-.certificate-section{
+.certificates-section{
     background-color: rgb(227, 227, 227); /* Same background */
     padding: 50px; /* Same padding */
 }
@@ -393,7 +393,6 @@ body {
 .certificates-container {
     display: flex;
     justify-content: left; /* Align items to the left */
-    padding: 50px;
     gap: 100px; /* Space between title and grid */
 }
 
@@ -437,8 +436,12 @@ body {
 .education-section {
     background-color: rgb(227, 227, 227); /* Same background */
     padding: 50px; /* Same padding */
+}
+
+.education-container{
     display: flex;
-    justify-content: left;
+    justify-content: left; /* Align items to the left */
+    gap: 100px; /* Space between title and grid */
 }
 
 .education-section::after{
