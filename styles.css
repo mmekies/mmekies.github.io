@@ -67,6 +67,7 @@ body {
     justify-content: center;
     align-items: center;
     color: black;
+    background-color: #000;
     text-align: center;
     overflow: hidden; /* Ensure the blurred background doesn't overflow */
 }
@@ -82,7 +83,7 @@ body {
     background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* Apply blur here */
+    filter: blur(3px); /* Apply blur here */
     opacity: 1;
     z-index: -1; /* Send it behind the text */
 }
