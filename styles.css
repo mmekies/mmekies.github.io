@@ -488,13 +488,9 @@ body {
 .contact-section {
     background-color: rgb(227, 227, 227); /* Same background color */
     padding: 50px; /* Same padding */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center items horizontally */
-    position: relative; /* For pseudo-element */
 }
 
-/* Common title style */
+
 .contact-title {
     font-size: 36px;
     font-family: "Antonio", sans-serif;
@@ -506,8 +502,8 @@ body {
 
 .contact-container{
     display: flex;
-    justify-content: left; /* Center the grid horizontally */
-    gap: 100px;
+    justify-content: left; /* Align items to the left */
+    gap: 100px; /* Space between title and grid */
 }
 
 .contact-form-container {
