@@ -82,6 +82,7 @@ body {
 }
 
 .about-text {
+    font-family: 'Roboto Condensed', sans-serif;
     max-width: 500px;
 }
 
@@ -132,10 +133,11 @@ body {
 /* Grid layout */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted min width */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
     gap: 20px;
-    /*justify-content: center; /* Center the grid */
-    padding: 20px; /* Add some padding */
+    justify-items: center; /* Ensure grid items are centered */
+    padding: 20px;
+    width: 100%;
 }
 
 /* Experience item styling */
