@@ -204,8 +204,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20px; /* Adjust as needed to add padding on the left */
-    right: 20px; /* Adjust as needed to add padding on the right */
+    left: 150px; /* Adjust as needed to add padding on the left */
+    right: 150px; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
@@ -310,16 +310,26 @@ body {
 
 /* Skills Section Styling */
 .skills-section {
-    padding: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     background-color: rgb(227, 227, 227);
-    max-height: 500px;
+}
+
+.skill-section ::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 150px; /* Adjust as needed to add padding on the left */
+    right: 150px; /* Adjust as needed to add padding on the right */
+    height: 2px; /* The thickness of the border */
+    background-color: #555; /* The color of the border */
 }
 
 .skills-container {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: flex-start; /* Align vertically to the top */
-    gap: 50px; /* Space between title and categories */
+    gap: 100px; /* Space between title and categories */
 }
 
 .skills-title h2 {
@@ -333,7 +343,7 @@ body {
 
 .skills-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(2, 1fr)); /* Create responsive grid */
     gap: 20px; /* Space between skill categories */
 }
 
@@ -343,7 +353,7 @@ body {
 }
 
 .skill {
-    margin-bottom: 15px;
+    margin-bottom: 0px;
 }
 
 .skill span {
@@ -385,7 +395,7 @@ body {
     justify-content: center; /* Center the grid horizontally */
     align-items: center;     /* Center items vertically if needed */
     padding: 20px;
-    margin-top: 25px;
+    margin-top: 0px;
     gap: 50px; /* Space between title and grid */
     background-color:  rgb(227, 227, 227);
 }
