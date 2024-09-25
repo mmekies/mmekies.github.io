@@ -127,9 +127,9 @@ body {
 .about-me {
     padding: 100px 0px;
     margin-top: 20px; /* Adjust for fixed top-bar */
+    background: linear-gradient(to bottom, black, rgb(167, 167, 167)); /* Gradient from black to light grey */
     display: flex;
     justify-content: center;
-    background-color: #f4f4f4;
 }
 
 .about-container {
