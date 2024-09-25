@@ -83,18 +83,21 @@ body {
     font-size: 48px; /* Adjust font size */
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
+    z-index: 2;
 }
 
 .header-section p {
     font-size: 24px; /* Adjust as needed */
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add shadow to paragraph text */
+    z-index: 2;
 }
 
 /* Social Icons */
 .social-icons {
     margin-top: 20px;
     gap: 15px;
+    z-index: 2;
 }
 
 .social-icons a img {
@@ -102,6 +105,7 @@ body {
     height: 40px;
     margin: 0 10px;
     transition: transform 0.3s ease;
+    z-index: 2;
 }
 
 .social-icons a img:hover {
