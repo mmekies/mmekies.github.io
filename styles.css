@@ -251,8 +251,8 @@ body {
 
 /* Star Styling */
 .star {
-    width: 40px; /* Adjust the size of the stars */
-    height: 40px;
+    width: 24px; /* Adjust the size of the stars */
+    height: 24px;
     margin: 0 3px; /* Spacing between stars */
 }
 
