@@ -116,27 +116,28 @@ body {
     text-decoration: underline;
     text-align: center;
 }
-/* Parent container styling */
+
+/* Experience Section */
 .experience-container {
     display: flex;
     justify-content: center; /* Center the grid horizontally */
-    align-items: center;     /* Center items vertically if needed */
     padding: 20px;
 }
 
 /* Grid layout */
 .experience-grid {
     display: grid;
-    padding-left: 10%;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted min width */
     gap: 20px;
     justify-content: center; /* Center the grid */
+    padding: 20px; /* Add some padding */
 }
 
 /* Experience item styling */
 .experience-item {
-    width: 500px;
-    height: 360px;
+    width: 100%; /* Use 100% to fill the grid cell */
+    max-width: 500px; /* Ensure a maximum width */
+    height: 360px; /* Fixed height */
     border-radius: 15px;
     border: 2px solid black;
     overflow: hidden;
@@ -145,6 +146,7 @@ body {
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth scaling */
 }
+
 
 /* Hover Effect */
 .experience-item:hover {
@@ -193,7 +195,7 @@ body {
     color: inherit; /* Keeps text styling consistent */
 }
 
-.certificate-block{
+.certificate-block-text{
     text-decoration: underline;
     text-align: center;
 }
