@@ -507,18 +507,9 @@ body {
     gap: 100px;
 }
 
-/* Grid layout for contact form and contact info */
-.contact-grid {
-    display: flex;
-    justify-content: space-between; /* Space out contact form and info */
-    max-width: 900px; /* Set a max width for better alignment */
-    width: 100%;
-    margin: 20px 0; /* Add some vertical spacing */
-}
-
 .contact-form-container {
     flex: 1; /* Allow the form to take up available space */
-    margin-right: 20px; /* Space between form and contact info */
+    min-width: 600px;
 }
 
 .contact-form {
@@ -561,12 +552,6 @@ body {
     display: flex;
     align-items: center; /* Center align icon and text */
     margin-left: 20px; /* Space from the form */
-}
-
-.envelope-icon {
-    width: 24px; /* Set a fixed size for the icon */
-    height: auto; /* Maintain aspect ratio */
-    margin-right: 8px; /* Space between icon and email text */
 }
 
 .copyright {
