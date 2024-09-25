@@ -61,7 +61,13 @@ body {
 /* Header Section */
 .header-section {
     position: relative;
-    height: 400px; /* Adjust height as needed */
+    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    height: 1000px; /* Adjust height as needed */
+    filter: blur(5px); /* Apply blur here */
+    z-index: -1; /* Send it behind the text */
+    opacity: 1; /* Optional: Adjust the opacity to make the text even clearer */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,21 +77,6 @@ body {
     overflow: hidden; /* Ensure the blurred background doesn't overflow */
 }
 
-/* Blurred Background */
-.header-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px); /* Apply blur here */
-    z-index: -1; /* Send it behind the text */
-    opacity: 1; /* Optional: Adjust the opacity to make the text even clearer */
-}
 
 /* Header Text (Ensure it's not blurred) */
 .header-section h1 {
@@ -103,19 +94,18 @@ body {
 /* Social Icons */
 .social-icons {
     margin-top: 20px;
-    display: flex;
-    justify-content: center;
     gap: 15px;
 }
 
-.social-icons a {
-    color: white;
-    font-size: 30px; /* Adjust icon size */
-    text-decoration: none;
+.social-icons a img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover {
-    color: #0077b5; /* LinkedIn blue on hover */
+.social-icons a img:hover {
+    transform: scale(1.2);
 }
 
 
@@ -186,6 +176,7 @@ body {
 }
 
 .experience-section{
+    background-color: rgb(167, 167, 167);
     border-bottom: 2px solid #555;
     border-width: 50%;
 }
