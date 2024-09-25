@@ -197,6 +197,7 @@ body {
 
 .experience-section {
     background-color: rgb(227, 227, 227);
+    padding: 50px;
     position: relative; /* Ensures the pseudo-element is positioned relative to this container */
 }
 
@@ -213,9 +214,8 @@ body {
 /* Experience Section */
 .experience-container {
     display: flex;
-    justify-content: center; /* Center the grid horizontally */
-    padding: 20px;
-    margin-top: 25px;
+    justify-content: left; /* Center the grid horizontally */
+    gap: 100px;
 }
 
 .experience-title{
@@ -310,8 +310,7 @@ body {
 
 /* Skills Section Styling */
 .skills-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px;
     background-color: rgb(227, 227, 227);
 }
 
@@ -327,8 +326,7 @@ body {
 
 .skills-container {
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Align vertically to the top */
+    justify-content: left; /* Align items to the left */
     gap: 100px; /* Space between title and categories */
 }
 
@@ -392,11 +390,9 @@ body {
 /* Parent container for certificates */
 .certificates-container {
     display: flex;
-    justify-content: center; /* Center the grid horizontally */
-    align-items: center;     /* Center items vertically if needed */
-    padding: 20px;
-    margin-top: 0px;
-    gap: 50px; /* Space between title and grid */
+    justify-content: left; /* Center the grid horizontally */
+    padding: 50px;
+    gap: 100px; /* Space between title and grid */
     background-color:  rgb(227, 227, 227);
 }
 
@@ -405,7 +401,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
-    /*justify-content: center; /* Center the grid */
 }
 
 /* Certificate item styling */
@@ -447,8 +442,7 @@ body {
 
 .contact-grid {
     display: grid;
-    grid-template-columns: 200px 1fr; /* Creates two columns: one for the h2 and one for the form */
-    gap: 30px; /* Space between the h2 and the form */
+    gap: 100px;
     align-items: start; /* Align h2 to the top of the form */
 }
 
@@ -464,7 +458,6 @@ body {
 /* Contact Form Container */
 .contact-form-container {
     display: flex;
-    flex-direction: column;
 }
 
 /* Contact Form */
