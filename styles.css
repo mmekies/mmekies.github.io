@@ -459,6 +459,13 @@ body {
     color: black;
 }
 
+/* Certificates grid layout */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px; /* Space between certificates */
+}
+
 .education-item h3 {
     font-size: 18px;
     margin: 5px 0;
@@ -473,7 +480,6 @@ body {
     color: #666;
     font-style: italic;
 }
-
 
 .contact-section {
     background-color: rgb(227, 227, 227); /* Same background color */
