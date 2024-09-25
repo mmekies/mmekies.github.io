@@ -61,22 +61,31 @@ body {
 /* Header Section */
 .header-section {
     position: relative;
-    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
-    background-size: cover;
-    background-position: center;
     height: 1000px; /* Adjust height as needed */
-    filter: blur(5px); /* Apply blur here */
-    z-index: -1; /* Send it behind the text */
-    opacity: 1; /* Optional: Adjust the opacity to make the text even clearer */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: black;
     text-align: center;
     overflow: hidden; /* Ensure the blurred background doesn't overflow */
 }
 
+/* Blurred Background using ::before */
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur here */
+    opacity: 1;
+    z-index: -1; /* Send it behind the text */
+}
 
 /* Header Text (Ensure it's not blurred) */
 .header-section h1 {
@@ -111,6 +120,7 @@ body {
 .social-icons a img:hover {
     transform: scale(1.2);
 }
+
 
 
 /* About Me section */
