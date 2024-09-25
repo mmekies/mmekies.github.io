@@ -58,24 +58,37 @@ body {
     border-radius: 3px;
 }
 
-/* Header section as a normal scrollable section */
+/* Header Section */
 .header-section {
     position: relative;
-    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Path to your large background image */
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px); /* Apply blur */
-    height: 1000px; /* Adjust height */
+    height: 400px; /* Adjust height as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Ensure text is white for contrast */
+    color: white;
     text-align: center;
+    overflow: hidden; /* Ensure the blurred background doesn't overflow */
 }
 
+/* Blurred Background */
+.header-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px); /* Apply blur here */
+    z-index: -1; /* Send it behind the text */
+    opacity: 1; /* Optional: Adjust the opacity to make the text even clearer */
+}
+
+/* Header Text (Ensure it's not blurred) */
 .header-section h1 {
-    font-family: 'Roboto Condensed', sans-serif;
     font-size: 48px; /* Adjust font size */
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Text shadow for visibility */
@@ -87,21 +100,22 @@ body {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8); /* Add shadow to paragraph text */
 }
 
-/* Social icons container */
+/* Social Icons */
 .social-icons {
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
 
-/* Social icons styling */
-.social-icons a img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    transition: transform 0.3s ease;
+.social-icons a {
+    color: white;
+    font-size: 30px; /* Adjust icon size */
+    text-decoration: none;
 }
 
-.social-icons a img:hover {
-    transform: scale(1.2);
+.social-icons a:hover {
+    color: #0077b5; /* LinkedIn blue on hover */
 }
 
 
