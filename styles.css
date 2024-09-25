@@ -61,7 +61,7 @@ body {
 /* About Me section */
 .about-me {
     padding: 100px 0px;
-    margin-top: 70px; /* Adjust for fixed top-bar */
+    margin-top: 50px; /* Adjust for fixed top-bar */
     display: flex;
     justify-content: center;
     background-color: #f4f4f4;
