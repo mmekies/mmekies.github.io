@@ -118,8 +118,10 @@ body {
 
 /* Experience Section */
 .experience-section-text  {
+    font-family: 'Roboto Condensed', sans-serif;
     text-decoration: underline;
     text-align: center;
+    padding-top: 20px;
 }
 
 /* Experience Section */
@@ -172,11 +174,13 @@ body {
 
 /* Description part (bottom half) */
 .experience-description {
+    font-family: 'Roboto Condensed', sans-serif;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
+    text-decoration: none;
 }
 
 .experience-description h3 {
