@@ -124,6 +124,10 @@ body {
     padding-top: 70px;
 }
 
+.experience-section{
+    border-bottom: 2px solid #555;
+}
+
 /* Experience Section */
 .experience-container {
     display: flex;
@@ -216,13 +220,19 @@ body {
     align-items: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min width as needed */
     gap: 20px; /* Space between categories */
-    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-bottom: 2px solid #555;
+}
+
+.skills-title{
+    text-decoration: underline;
+    text-align: center;
+    padding-top: 70px;
 }
 
 /* Skills Category */
 .skills-category {
-    border: 1px solid #000000;
-    border-radius: 1px;
     padding: 15px;
     background-color: #ffffff;
 }
