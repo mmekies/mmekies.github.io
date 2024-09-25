@@ -195,10 +195,19 @@ body {
 }
 
 
-.experience-section{
+.experience-section {
     background-color: rgb(227, 227, 227);
-    border-bottom: 2px solid #555;
-    border-bottom-width: 50%;
+    position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+}
+
+.experience-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px; /* Adjust as needed to add padding on the left */
+    right: 20px; /* Adjust as needed to add padding on the right */
+    height: 2px; /* The thickness of the border */
+    background-color: #555; /* The color of the border */
 }
 
 /* Experience Section */
