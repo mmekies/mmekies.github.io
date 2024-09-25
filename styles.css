@@ -224,6 +224,8 @@ body {
 /* Skills Grid */
 .skills-grid {
     display: grid;
+    padding-left: 10%;
+    padding-right: 10%;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
     justify-items: center;
