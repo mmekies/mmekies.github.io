@@ -124,6 +124,7 @@ body {
     display: flex;
     justify-content: center; /* Center the grid horizontally */
     padding: 20px;
+    margin-top: 25px;
 }
 
 /* Grid layout */
@@ -139,7 +140,7 @@ body {
 .experience-item {
     width: 100%; /* Use 100% to fill the grid cell */
     max-width: 500px; /* Ensure a maximum width */
-    height: 360px; /* Fixed height */
+    height: 300px; /* Fixed height */
     border-radius: 15px;
     border: 2px solid black;
     overflow: hidden;
@@ -208,6 +209,7 @@ body {
     justify-content: center; /* Center the grid horizontally */
     align-items: center;     /* Center items vertically if needed */
     padding: 20px;
+    margin-top: 25px;
 }
 
 /* Certificates grid layout */
