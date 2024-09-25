@@ -207,6 +207,62 @@ body {
     color: inherit; /* Keeps text styling consistent */
 }
 
+/* Skills Section */
+.skills-section {
+    padding: 20px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.skills-title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusts columns based on available space */
+    gap: 20px;
+    justify-items: center;
+}
+
+/* Skill Item */
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+/* Skill Name */
+.skill-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Stars Container */
+.skill-stars {
+    display: flex;
+    justify-content: center;
+}
+
+/* Star Styling */
+.star {
+    font-size: 24px;
+    color: #ffd700; /* Gold color for stars */
+    margin: 0 3px;
+}
+
+/* Empty Stars */
+.empty-star {
+    color: #ddd; /* Grey for empty stars */
+}
+
+
 .certificate-block-text{
     text-decoration: underline;
     text-align: center;
