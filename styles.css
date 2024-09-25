@@ -30,7 +30,7 @@ body {
     list-style: none;
     display: flex;
     justify-content: center; /* Center the options */
-    gap: 20px;
+    gap: 0px;
 }
 
 /* Navbar links */
@@ -92,10 +92,10 @@ body {
     font-size: 48px; /* Adjust font size */
     margin: 0;
     text-shadow: 
-        -1px -1px 0px black,  /* Top left shadow */
-        1px -1px 0px black,   /* Top right shadow */
-        -1px 1px 0px black,   /* Bottom left shadow */
-        1px 1px 0px black;    /* Bottom right shadow */
+        -2px -2px 0px black,  /* Top left shadow */
+        2px -2px 0px black,   /* Top right shadow */
+        -2px 2px 0px black,   /* Bottom left shadow */
+        2px 2px 0px black;    /* Bottom right shadow */
     color: white;           /* White text color */
     z-index: 2;
 }
@@ -104,10 +104,10 @@ body {
     font-size: 24px; /* Adjust as needed */
     margin: 0;
     text-shadow: 
-        -1px -1px 0px black,  /* Top left shadow */
-        1px -1px 0px black,   /* Top right shadow */
-        -1px 1px 0px black,   /* Bottom left shadow */
-        1px 1px 0px black;    /* Bottom right shadow */
+        -2px -2px 0px black,  /* Top left shadow */
+        2px -2px 0px black,   /* Top right shadow */
+        -2px 2px 0px black,   /* Bottom left shadow */
+        2px 2px 0px black;    /* Bottom right shadow */
     color: white;           /* White text color */
     z-index: 2;
 }
@@ -126,6 +126,7 @@ body {
     margin: 0 10px;
     transition: transform 0.3s ease;
     z-index: 2;
+    box-shadow: 2px;
 }
 
 .social-icons a img:hover {
@@ -158,18 +159,29 @@ body {
 
 .about-text {
     font-family: 'Roboto Condensed', sans-serif;
-    color:#ffffff;
+    color: #ffffff; /* White text color */
     max-width: 500px;
 }
 
 .about-text h1 {
     margin-bottom: 10px;
-    text-decoration: underline;
+    text-decoration: underline; /* If you still want the underline effect */
+    text-shadow: 
+    -2px -2px 0px black,  /* Top left shadow */
+    2px -2px 0px black,   /* Top right shadow */
+    -2px 2px 0px black,   /* Bottom left shadow */
+    2px 2px 0px black;    /* Bottom right shadow */
 }
 
 .about-text p {
     margin-bottom: 20px;
+    text-shadow: 
+        -2px -2px 0px black,  /* Top left shadow */
+        2px -2px 0px black,   /* Top right shadow */
+        -2px 2px 0px black,   /* Bottom left shadow */
+        2px 2px 0px black;    /* Bottom right shadow */
 }
+
 
 /* CV Button */
 .cv-button {
@@ -193,12 +205,19 @@ body {
 }
 
 /* Experience Section */
-.experience-section-text  {
+.experience-section-text {
     font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: underline;
+    color: #ffffff; /* White text color */
+    text-decoration: underline; /* Underline effect */
     text-align: center;
     padding-top: 70px;
+    text-shadow: 
+    -2px -2px 0px black,  /* Top left shadow */
+    2px -2px 0px black,   /* Top right shadow */
+    -2px 2px 0px black,   /* Bottom left shadow */
+    2px 2px 0px black;    /* Bottom right shadow */
 }
+
 
 .experience-section{
     background-color: rgb(167, 167, 167);
