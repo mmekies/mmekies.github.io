@@ -67,7 +67,6 @@ body {
     justify-content: center;
     align-items: center;
     color: black;
-    background-color: #000;
     text-align: center;
     overflow: hidden; /* Ensure the blurred background doesn't overflow */
 }
@@ -105,10 +104,10 @@ body {
     font-size: 24px; /* Adjust as needed */
     margin: 0;
     text-shadow: 
-        -2px -2px 0px black,  /* Top left shadow */
-        2px -2px 0px black,   /* Top right shadow */
-        -2px 2px 0px black,   /* Bottom left shadow */
-        2px 2px 0px black;    /* Bottom right shadow */
+        -1px -1px 0px black,  /* Top left shadow */
+        1px -1px 0px black,   /* Top right shadow */
+        -1px 1px 0px black,   /* Bottom left shadow */
+        1px 1px 0px black;    /* Bottom right shadow */
     color: white;           /* White text color */
     z-index: 2;
 }
@@ -176,11 +175,7 @@ body {
 
 .about-text p {
     margin-bottom: 20px;
-    text-shadow: 
-        -2px -2px 0px black,  /* Top left shadow */
-        2px -2px 0px black,   /* Top right shadow */
-        -2px 2px 0px black,   /* Bottom left shadow */
-        2px 2px 0px black;    /* Bottom right shadow */
+    color: black;
 }
 
 
