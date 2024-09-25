@@ -132,7 +132,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Adjusted min width */
     gap: 20px;
-    justify-content: center; /* Center the grid */
+    /*justify-content: center; /* Center the grid */
     padding: 20px; /* Add some padding */
 }
 
@@ -217,7 +217,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px;
-    justify-content: center; /* Center the grid */
+    /*justify-content: center; /* Center the grid */
 }
 
 /* Certificate item styling */
