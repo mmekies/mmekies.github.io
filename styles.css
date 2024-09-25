@@ -312,6 +312,9 @@ body {
 .skills-section {
     padding: 50px;
     background-color: rgb(227, 227, 227);
+    display: flex;
+    justify-content: left; /* Center the grid horizontally */
+    gap: 100px;
 }
 
 .skill-section ::after{
@@ -322,12 +325,6 @@ body {
     right: 150px; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
-}
-
-.skills-container {
-    display: flex;
-    justify-content: left; /* Align items to the left */
-    gap: 100px; /* Space between title and categories */
 }
 
 .skills-title h2 {
