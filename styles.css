@@ -209,6 +209,14 @@ body {
     margin-top: 25px;
 }
 
+.experience-title{
+    font-size: 36px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
 /* Grid layout */
 .experience-grid {
     display: grid;
@@ -309,13 +317,15 @@ body {
 
 .skills-title h2 {
     font-size: 36px;
+    font-family: "Antonio", sans-serif;
     text-transform: uppercase;
     font-weight: bold;
+    text-align: center;
 }
 
 .skills-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Create responsive grid */
     gap: 30px; /* Space between skill categories */
 }
 
@@ -351,6 +361,7 @@ body {
 .certificate-section{
     background-color:  rgb(227, 227, 227);
 }
+
 .certificate-block-text{
     font-family: 'Roboto Condensed', sans-serif;
     text-decoration: underline;
