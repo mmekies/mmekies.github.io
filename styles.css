@@ -217,7 +217,6 @@ body {
     justify-items: center; /* Ensure grid items are centered */
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 20px;
     width: 100%;
 }
 
@@ -291,56 +290,63 @@ body {
     color: inherit; /* Keeps text styling consistent */
 }
 
-/* Skills Section */
+/* Skills Section Styling */
 .skills-section {
-    font-family: 'Roboto Condensed', sans-serif;
+    padding: 50px;
+    background-color: rgb(227, 227, 227);
+}
+
+.skills-container {
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: flex-start; /* Align vertically to the top */
+    gap: 50px; /* Space between title and categories */
+}
+
+.skills-title {
+    min-width: 200px; /* Adjust as necessary */
+}
+
+.skills-title h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.skills-categories {
     display: grid;
-    align-items: center;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the min width as needed */
-    gap: 20px; /* Space between categories */
-    padding-left: 10%;
-    padding-right: 10%;
-    background-color: rgb(167, 167, 167);
-    border-bottom: 2px solid #555;
-    border-bottom-width: 50%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive grid */
+    gap: 30px; /* Space between skill categories */
 }
 
-.skills-title{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-align: center;
-    padding-top: 70px;
+.skills-category h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
 }
 
-/* Skills Category */
-.skills-category {
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 15px;
-    min-width: 300px;
-    background-color: #ffffff;
-}
-
-/* Skill Item */
 .skill {
-    margin: 10px 0; /* Space between skills */
-}
-.skill span{
-    text-align: left;
+    margin-bottom: 15px;
 }
 
-/* Progress Bar Container */
+.skill span {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
 .progress {
-    background-color: #e0e0e0; /* Background of the loading bar */
-    border-radius: 25px;
-    height: 20px; /* Height of the loading bar */
-    overflow: hidden; /* Prevent overflow */
+    background-color: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    height: 10px;
 }
 
-/* Progress Bar */
 .progress-bar {
-    background-color: #b81c1c; /* Green color for the filled portion */
-    height: 100%; /* Fill the height of the progress container */
-    transition: width 0.3s; /* Smooth transition for width change */
+    background-color: #e51b20; /* Bar color */
+    height: 100%;
+    border-radius: 20px 0 0 20px; /* Round the left side */
 }
+
 
 .certificate-section{
     background-color:  rgb(227, 227, 227);
