@@ -91,11 +91,6 @@ body {
 .header-section h1 {
     font-size: 48px; /* Adjust font size */
     margin: 0;
-    text-shadow: 
-        -2px -2px 0px black,  /* Top left shadow */
-        2px -2px 0px black,   /* Top right shadow */
-        -2px 2px 0px black,   /* Bottom left shadow */
-        2px 2px 0px black;    /* Bottom right shadow */
     color: white;           /* White text color */
     z-index: 2;
 }
@@ -103,11 +98,6 @@ body {
 .header-section p {
     font-size: 24px; /* Adjust as needed */
     margin: 0;
-    text-shadow: 
-        -1px -1px 0px black,  /* Top left shadow */
-        1px -1px 0px black,   /* Top right shadow */
-        -1px 1px 0px black,   /* Bottom left shadow */
-        1px 1px 0px black;    /* Bottom right shadow */
     color: white;           /* White text color */
     z-index: 2;
 }
@@ -165,7 +155,6 @@ body {
 
 .about-text h1 {
     margin-bottom: 10px;
-    text-decoration: underline; /* If you still want the underline effect */
     text-shadow: 
     -2px -2px 0px black,  /* Top left shadow */
     2px -2px 0px black,   /* Top right shadow */
@@ -175,7 +164,8 @@ body {
 
 .about-text p {
     margin-bottom: 20px;
-    color: black;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -204,7 +194,6 @@ body {
 .experience-section-text {
     font-family: 'Roboto Condensed', sans-serif;
     color: #ffffff; /* White text color */
-    text-decoration: underline; /* Underline effect */
     text-align: center;
     padding-top: 70px;
     text-shadow: 
@@ -274,10 +263,12 @@ body {
 /* Description part (bottom half) */
 .experience-description {
     font-family: 'Roboto Condensed', sans-serif;
+    color: black;
     padding: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    text-decoration: none;
     text-align: left;
     text-decoration: none;
 }
@@ -285,17 +276,20 @@ body {
 .experience-description h3 {
     font-size: 18px;
     font-weight: bold;
+    text-decoration: none;
     margin: 0 0 10px 0;
 }
 
 .experience-description .details {
     font-size: 14px;
+    text-decoration: none;
     margin: 0 0 10px 0;
 }
 
 .experience-description .date {
     font-size: 12px;
-    font-weight: bold;
+    font-style: italic;
+    text-decoration: none;
     color: #555;
     margin-top: auto;
 }
