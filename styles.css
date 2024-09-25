@@ -215,6 +215,7 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 /* Grid layout */
@@ -321,12 +322,13 @@ body {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 .skills-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Create responsive grid */
-    gap: 30px; /* Space between skill categories */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Create responsive grid */
+    gap: 20px; /* Space between skill categories */
 }
 
 .skills-category h3 {
@@ -348,7 +350,7 @@ body {
     background-color: #ffffff;
     border-radius: 20px;
     overflow: hidden;
-    height: 10px;
+    height: 20px;
 }
 
 .progress-bar {
@@ -362,10 +364,13 @@ body {
     background-color:  rgb(227, 227, 227);
 }
 
-.certificate-block-text{
-    font-family: 'Roboto Condensed', sans-serif;
-    text-decoration: underline;
+.certificate-title{
+    font-size: 36px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
     text-align: center;
+    color: black;
 }
 
 /* Parent container for certificates */
