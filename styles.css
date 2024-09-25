@@ -217,7 +217,7 @@ body {
 
 .skills-title {
     font-size: 24px;
-    font-weight: bold;
+    text-decoration: underline;
     margin-bottom: 20px;
 }
 
