@@ -123,8 +123,6 @@ body {
     transform: scale(1.2);
 }
 
-
-
 /* About Me section */
 .about-me {
     padding: 100px 0px;
@@ -331,7 +329,7 @@ body {
     gap: 100px;
 }
 
-.skills-title h2 {
+.skills-title {
     font-size: 36px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
@@ -507,8 +505,7 @@ body {
 }
 
 .contact-form-container {
-    flex: 1; /* Allow the form to take up available space */
-    min-width: 600px;
+    min-width: 500px;
 }
 
 .contact-form {
