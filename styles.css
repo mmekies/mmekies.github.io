@@ -239,9 +239,9 @@ body {
 
 /* Experience Section */
 .experience-container {
+    width: 100%;
     display: flex;
     margin: 0 auto;
-    justify-content: center; /* Center the grid horizontally */
     flex-direction: column;
     gap: 20px;
 }
@@ -260,8 +260,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
     gap: 20px;
-    justify-items: center; /* Ensure grid items are centered */
-    width: 100%;
 }
 
 /* Experience item styling */
@@ -454,12 +452,11 @@ body {
 
 /* Parent container for certificates */
 .certificates-container {
+    width: 100%;
     display: flex;
     margin: 0 auto;
-    width: auto;
-    justify-content: center; /* Align items to the left */
     flex-direction: column;
-    gap: 20px; /* Space between title and grid */
+    gap: 50px; /* Space between title and grid */
 }
 
 /* Certificates grid layout */
@@ -467,8 +464,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px; /* Space between certificates */
-    justify-items: center; /* Ensure grid items are centered */
-    width: 100%;
 }
 
 /* Certificate item styling */
