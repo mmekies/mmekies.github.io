@@ -101,11 +101,11 @@ html, body {
         row-gap: 20px;
     }
 
-    .responsive-three-column-grid {
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+
+    .responsive-three-columns > * {
+        width:calc(100% / 3);
     }
+    
 }
 
 
@@ -360,12 +360,14 @@ html, body {
 }
 
 /* container */
-.responsive-three-column-grid {
-    display:block;
+.responsive-three-columns {
+    display:flex;
+    flex-wrap:wrap;
 }
 
 /* columns */
-.responsive-three-column-grid > * {
+.responsive-three-columns > * {
+    width:100%;
     padding:1rem;
 }
 
