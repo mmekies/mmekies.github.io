@@ -114,7 +114,7 @@ html, body {
     background-image: url('https://wallpapercave.com/wp/wp8484444.jpg'); /* Your background image */
     background-size: cover;
     background-position: center;
-    filter: blur(1px); /* Apply blur here */
+    filter: blur(0px); /* Apply blur here */
     opacity: 1;
     z-index: -1; /* Send it behind the text */
 }
@@ -260,13 +260,13 @@ html, body {
     color: black;
 }
 
-/* Grid layout */
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 500px width items */
     gap: 75px;
-    justify-content: center;
-    display: flex;
+    justify-content: center;  /* Center grid items horizontally */
+    justify-items: center;    /* Center individual items in their grid cells */
+    align-items: center;      /* Center items vertically within their grid cells */
 }
 
 /* Experience item styling */
@@ -379,11 +379,11 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
-    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid with min width */
     gap: 50px; /* Space between categories */
-    justify-content: center;
-    display: flex;
+    justify-content: center;  /* Center grid items horizontally */
+    justify-items: center;    /* Center individual items in their grid cells */
+    align-items: center;      /* Center items vertically within their grid cells */
 }
 
 .skills-category {
@@ -477,6 +477,9 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px; /* Space between certificates */
+    justify-content: center;  /* Center grid items horizontally */
+    justify-items: center;    /* Center individual items in their grid cells */
+    align-items: center;      /* Center items vertically within their grid cells */
 }
 
 /* Certificate item styling */
