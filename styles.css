@@ -89,12 +89,15 @@ html, body {
 }
 
 @media (min-width: 768px) { /* Adjust the width based on your design needs */
+    
     .experience-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     }
-    
+
     .skills-categories{
-        width:calc((100% - 4rem) / 3);
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
