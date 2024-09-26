@@ -69,6 +69,17 @@ body {
     .top-bar {
         display: none; /* Hide the top bar on mobile devices */
     }
+    .header-section{
+        position: relative;
+        max-height: 500px; /* Adjust height as needed */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        overflow: hidden; /* Ensure the blurred background doesn't overflow */
+    }
 }
 
 
@@ -76,7 +87,6 @@ body {
 /* Header Section */
 .header-section {
     position: relative;
-    min-height: 500px;
     max-height: 1000px; /* Adjust height as needed */
     display: flex;
     flex-direction: column;
