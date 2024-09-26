@@ -362,15 +362,11 @@ html, body {
 }
 
 /* container */
-.responsive-three-columns {
-    display:flex;
-    flex-wrap:wrap;
-}
-
-/* columns */
-.responsive-three-columns > * {
-    width:100%;
-    padding:1rem;
+.responsive-three-columns{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
 }
 
 /* Skills Section Styling */
