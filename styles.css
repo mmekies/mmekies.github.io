@@ -522,11 +522,18 @@ body {
     background-color: #555; /* The color of the border */
 }
 
-/* Experience Section */
+
 .projects-container {
     display: flex;
     justify-content: left; /* Center the grid horizontally */
     gap: 100px;
+}
+
+.projects-section-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #ffffff; /* White text color */
+    text-align: center;
+    padding-top: 20px;
 }
 
 .projects-title{
@@ -640,7 +647,7 @@ body {
 .contact-container{
     display: flex;
     justify-content: left; /* Align items to the left */
-    gap: 100px; /* Space between title and grid */
+    gap: 200px; /* Space between title and grid */
 }
 
 .contact-form-container {
