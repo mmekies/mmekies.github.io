@@ -71,7 +71,7 @@ body {
     }
     .header-section{
         position: relative;
-        max-height: 500px; /* Adjust height as needed */
+        height: 800px; /* Adjust height as needed */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,7 +87,7 @@ body {
 /* Header Section */
 .header-section {
     position: relative;
-    max-height: 1000px; /* Adjust height as needed */
+    height: 1000px; /* Adjust height as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
