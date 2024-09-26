@@ -141,7 +141,7 @@ body {
 
 /* About Me section */
 .about-me {
-    padding: 100px 0px;
+    padding: 100px 20px;
     background: linear-gradient(to bottom, black, rgb(227, 227, 227)); /* Gradient from black to light grey */
     display: flex;
     justify-content: center;
