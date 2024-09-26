@@ -457,6 +457,8 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 20px; /* Space between certificates */
+    justify-items: center; /* Ensure grid items are centered */
+    width: 100%;
 }
 
 /* Certificate item styling */
@@ -540,6 +542,8 @@ body {
 .education-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    justify-items: center; /* Ensure grid items are centered */
+    width: 100%;
     gap: 20px; /* Space between certificates */
 }
 
