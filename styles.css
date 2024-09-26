@@ -15,33 +15,37 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black */
     color: white;
-    padding: 0px;
+    padding: 10px; /* Add padding for spacing */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Enable wrapping on smaller screens */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
+    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Navbar container */
 .navbar ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Center the options */
-    gap: 0px;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
 }
 
 /* Navbar links */
 .navbar a {
-    display:block; /* Make the link a block element */
+    display: block; /* Make the link a block element */
     padding: 10px 15px; /* Space inside the link */
     color: white;
     text-decoration: none;
     font-weight: bold;
-    transition: background-color 0.3s; /* Smooth hover transition */
-    border-radius: 0px; /* Optional: rounded corners */
+    transition: background-color 0.3s;
+    border-radius: 0px;
 }
 
 /* Highlight on hover */
@@ -49,10 +53,11 @@ body {
     background-color: #b81c1c; /* Highlight color */
 }
 
-.language-selector{
+/* Language selector */
+.language-selector {
     padding-right: 20px;
 }
-/* Language selector */
+
 .language-selector select {
     background-color: #333;
     font-family: 'Roboto Condensed', sans-serif;
@@ -61,6 +66,29 @@ body {
     padding: 5px;
     border-radius: 3px;
 }
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column; /* Stack elements vertically */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .navbar ul {
+        flex-direction: column; /* Stack menu items vertically */
+        gap: 5px; /* Adjust gap between links */
+    }
+
+    .navbar a {
+        padding: 8px 10px; /* Smaller padding for mobile */
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+
+    .language-selector {
+        padding-right: 0;
+    }
+}
+
 
 /* Header Section */
 .header-section {
