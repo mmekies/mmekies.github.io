@@ -663,11 +663,19 @@ body {
     background-color: rgb(227, 227, 227);
     padding: 50px;
     position: relative;
-    min-height: 100vh; /* Make the section take the full height of the viewport */
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center content vertically */
     align-items: center; /* Center content horizontally */
+}
+
+.contact-title{
+    font-size: 36px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    justify-content: left;
 }
 
 .contact-container {
