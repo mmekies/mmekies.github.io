@@ -239,8 +239,6 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
     gap: 20px;
     justify-items: center; /* Ensure grid items are centered */
-    padding-left: 5%;
-    padding-right: 10%;
     width: 100%;
 }
 
@@ -248,10 +246,9 @@ body {
 .experience-item {
     width: 100%; /* Use 100% to fill the grid cell */
     max-width: 500px; /* Ensure a maximum width */
-    height: 300px; /* Fixed height */
+    max-height: 300px; /* Fixed height */
     border-radius: 15px;
     border: 2px solid black;
-    overflow: hidden;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -270,12 +267,13 @@ body {
 /* Banner Image */
 .experience-banner img {
     width: 100%;
-    height: 180px;
+    max-height: 180px;
     object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
 /* Description part (bottom half) */
 .experience-description {
+    min-height: 60px;
     font-family: 'Roboto Condensed', sans-serif;
     color: black;
     padding: 15px;
