@@ -356,12 +356,16 @@
     color: inherit; /* Keeps text styling consistent */
 }
 
+.grid-container {
+    width: 100%; /* Make sure the container takes the full width of the page */
+    max-width: 1200px; /* Optional: Limit max width to avoid stretching on large screens */
+    margin: 0 auto; /* Center the container */
+}
 /* container */
 .responsive-three-columns{
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
 }
 
 /* Skills Section Styling */
