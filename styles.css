@@ -66,20 +66,8 @@ body {
 
 /* Media Query to Hide Other Links on Mobile */
 @media (max-width: 768px) {
-    .navbar ul {
-        display: none; /* Hide the navbar links on mobile */
-    }
-
-    .navbar ul.contact-link {
-        display: block; /* Ensure "Contact Me" is visible */
-    }
-
     .top-bar {
-        justify-content: space-between; /* Ensure proper spacing */
-    }
-
-    .language-selector {
-        margin-left: auto; /* Push the language selector to the right */
+        display: none; /* Hide the top bar on mobile devices */
     }
 }
 
