@@ -317,7 +317,7 @@ body {
     position: relative;
 }
 
-.skills-section::after{
+.skills-section::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -327,11 +327,13 @@ body {
     background-color: #555; /* The color of the border */
 }
 
-.skills-container{
+.skills-container {
     width: 100%;
     max-width: 1200px;
-    justify-content: left; /* Center the grid horizontally */
-    gap: 100px;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-direction: column; /* Stack title and grid */
+    gap: 50px;
 }
 
 .skills-title {
@@ -343,14 +345,18 @@ body {
     color: black;
 }
 
+/* Use Grid for Skill Categories */
 .skills-categories {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with min width */
     gap: 20px; /* Space between categories */
-    flex: 1;
-    min-width: 250px; /* Ensure minimum width so categories don't get too narrow */
-    max-width: 400px; /* Limit the max width of each category */
-    justify-content: center; /* Center the categories */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.skills-category {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .skills-category h3 {
@@ -359,7 +365,7 @@ body {
 }
 
 .skill {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
 }
 
 .skill span {
@@ -367,6 +373,21 @@ body {
     margin-bottom: 5px;
     font-weight: bold;
 }
+
+.progress {
+    background-color: #f3f3f3;
+    border-radius: 4px;
+    height: 10px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: #555;
+    border-radius: 4px;
+}
+
 
 .progress {
     background-color: #ffffff;
