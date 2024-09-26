@@ -207,8 +207,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 150px; /* Adjust as needed to add padding on the left */
-    right: 150px; /* Adjust as needed to add padding on the right */
+    left: 15%; /* Adjust as needed to add padding on the left */
+    right: 15%; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
@@ -414,8 +414,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 150px; /* Adjust as needed to add padding on the left */
-    right: 150px; /* Adjust as needed to add padding on the right */
+    left: 15%; /* Adjust as needed to add padding on the left */
+    right: 15%; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
@@ -484,8 +484,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 150px; /* Adjust as needed to add padding on the left */
-    right: 150px; /* Adjust as needed to add padding on the right */
+    left: 15%; /* Adjust as needed to add padding on the left */
+    right: 15%; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
@@ -502,8 +502,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 150px; /* Adjust as needed for padding */
-    right: 150px; /* Adjust as needed for padding */
+    left: 15%; /* Adjust as needed to add padding on the left */
+    right: 15%; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
@@ -549,8 +549,8 @@ body {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 150px; /* Adjust as needed to add padding on the left */
-    right: 150px; /* Adjust as needed to add padding on the right */
+    left: 15%; /* Adjust as needed to add padding on the left */
+    right: 15%; /* Adjust as needed to add padding on the right */
     height: 2px; /* The thickness of the border */
     background-color: #555; /* The color of the border */
 }
