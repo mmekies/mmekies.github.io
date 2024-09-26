@@ -379,7 +379,7 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr)); /* Responsive grid with min width */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
     gap: 20px; /* Space between categories */
 }
 
