@@ -216,7 +216,8 @@ body {
 /* Experience Section */
 .experience-container {
     display: flex;
-    justify-content: left; /* Center the grid horizontally */
+    flex-direction: column;
+    justify-content: center; /* Center the grid horizontally */
     gap: 100px;
 }
 
@@ -390,7 +391,7 @@ body {
 
 
 .progress {
-    background-color: #ffffff;
+    background-color: #b0b0b0;
     border-radius: 20px;
     overflow: hidden;
     height: 20px;
@@ -431,8 +432,9 @@ body {
 /* Parent container for certificates */
 .certificates-container {
     display: flex;
-    justify-content: left; /* Align items to the left */
-    gap: 100px; /* Space between title and grid */
+    justify-content: center; /* Align items to the left */
+    flex-direction: column;
+    gap: 20px; /* Space between title and grid */
 }
 
 /* Certificates grid layout */
@@ -492,7 +494,8 @@ body {
 .education-container{
     display: flex;
     justify-content: left; /* Align items to the left */
-    gap: 100px; /* Space between title and grid */
+    flex-direction: column;
+    gap: 20px; /* Space between title and grid */
 }
 
 .education-section::after{
@@ -555,8 +558,10 @@ body {
 
 .projects-container {
     display: flex;
-    justify-content: left; /* Center the grid horizontally */
-    gap: 100px;
+    width: auto;
+    justify-content: center; /* Center the grid horizontally */
+    flex-direction: column;
+    gap: 20px;
 }
 
 .projects-section-text {
