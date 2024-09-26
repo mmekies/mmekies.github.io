@@ -65,7 +65,8 @@ body {
 /* Header Section */
 .header-section {
     position: relative;
-    height: 1000px; /* Adjust height as needed */
+    min-height: 500px;
+    max-height: 1000px; /* Adjust height as needed */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,8 +144,10 @@ body {
 }
 
 .profile-pic {
-    width: 300px;
-    height: 300px;
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: 50%;
     object-fit: cover;
 }
