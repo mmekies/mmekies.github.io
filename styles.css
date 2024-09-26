@@ -572,7 +572,7 @@ body {
 .projects-banner img {
     width: 100%;
     height: 300;
-    object-fit:contain;
+    object-fit:fill;
 }
 
 .projects-icons {
@@ -586,7 +586,7 @@ body {
     transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
 }
 
-.projects-icons:hover {
+.project-icon:hover {
     transform: scale(1.2); /* Increase size on hover */
 }
 /* Description part (bottom half) */
@@ -652,8 +652,9 @@ body {
 }
 
 .contact-form-container {
-    min-width: 500px;
-    text-align: center; /* Center the form */
+    width: 100%; /* Make the form container take full width */
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
 }
 
 .contact-form {
