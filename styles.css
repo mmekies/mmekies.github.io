@@ -313,7 +313,7 @@ body {
     position: relative;
 }
 
-.skill-section ::after{
+.skill-section::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -379,6 +379,16 @@ body {
     position: relative;
 }
 
+.certificates-section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 150px; /* Adjust as needed to add padding on the left */
+    right: 150px; /* Adjust as needed to add padding on the right */
+    height: 2px; /* The thickness of the border */
+    background-color: #555; /* The color of the border */
+}
+
 .certificate-title{
     font-size: 36px;
     font-family: "Antonio", sans-serif;
@@ -437,6 +447,17 @@ body {
     padding: 50px; /* Same padding */
     position: relative;
 }
+
+.education-section::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 150px; /* Adjust as needed to add padding on the left */
+    right: 150px; /* Adjust as needed to add padding on the right */
+    height: 2px; /* The thickness of the border */
+    background-color: #555; /* The color of the border */
+}
+
 
 .education-container{
     display: flex;
