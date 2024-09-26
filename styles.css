@@ -342,6 +342,9 @@ body {
 .skills-categories {
     display: flex;
     gap: 20px; /* Space between categories */
+    flex: 1;
+    min-width: 250px; /* Ensure minimum width so categories don't get too narrow */
+    max-width: 400px; /* Limit the max width of each category */
     justify-content: center; /* Center the categories */
     flex-wrap: wrap; /* Allow wrapping on smaller screens */
 }
