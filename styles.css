@@ -96,14 +96,16 @@ html, body {
 
     .skills-categories{
         display: grid;
-        grid-auto-rows: 1fr;
+        grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        row-gap: 20px;
+        grid-template-rows: 1fr;
     }
 
-
-    .responsive-three-columns > * {
-        width:calc(100% / 3);
+    .responsive-three-columns{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
     
 }
