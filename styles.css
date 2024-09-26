@@ -248,7 +248,6 @@ html, body {
 .experience-container {
     width: 100%;
     display: flex;
-    margin: 0 auto;
     flex-direction: column;
     gap: 20px;
 }
@@ -267,6 +266,8 @@ html, body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
     gap: 20px;
+    justify-content: center;
+    display: flex;
 }
 
 /* Experience item styling */
