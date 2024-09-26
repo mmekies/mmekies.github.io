@@ -359,6 +359,16 @@ html, body {
     color: inherit; /* Keeps text styling consistent */
 }
 
+/* container */
+.responsive-three-column-grid {
+    display:block;
+}
+
+/* columns */
+.responsive-three-column-grid > * {
+    padding:1rem;
+}
+
 /* Skills Section Styling */
 .skills-section {
     padding: 50px;
