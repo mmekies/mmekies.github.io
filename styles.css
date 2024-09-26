@@ -88,6 +88,12 @@ html, body {
     }
 }
 
+@media (min-width: 768px) { /* Adjust the width based on your design needs */
+    .experience-grid {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+}
+
 
 
 /* Header Section */
