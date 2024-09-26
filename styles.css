@@ -563,7 +563,7 @@ body {
 .projects-item {
     width: 100%; /* Use 100% to fill the grid cell */
     max-width: 300; /* Ensure a maximum width */
-    height: 400; /* Fixed height */
+    max-height: 400; /* Fixed height */
     border-radius: 15px;
     border: 2px solid black;
     overflow: hidden;
