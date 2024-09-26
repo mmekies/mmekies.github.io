@@ -94,9 +94,7 @@ html, body {
     }
     
     .skills-categories{
-        display: grid;
-        grid-auto-rows: 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        width:calc((100% - 4rem) / 3);
     }
 }
 
