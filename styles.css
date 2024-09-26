@@ -263,6 +263,7 @@ html, body {
 .experience-grid {
     display: grid;
     align-items: center;
+    justify-items: center;
     gap: 50px;
 }
 
@@ -377,6 +378,7 @@ html, body {
 .skills-categories {
     display: grid;
     align-items: center;
+    justify-items: center;
 }
 
 .skills-category {
