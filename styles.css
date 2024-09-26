@@ -1,19 +1,14 @@
-html, body {
+/*html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
-    overflow-y: auto; /* Only vertical scroll */
-}
+    overflow-x: hidden; 
+    overflow-y: auto; 
+}*/
 
 * {
     box-sizing: border-box; /* Ensure padding and borders are included in width/height */
-}
-
-.container {
-    min-height: 100vh; /* Full screen height */
-    width: 100vw; /* Full screen width */
 }
 
 
