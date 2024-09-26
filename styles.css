@@ -377,8 +377,7 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
-    align-items: center;
-    justify-items: center;
+    grid-template-columns: auto auto auto;
 }
 
 .skills-category {
