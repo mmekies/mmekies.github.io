@@ -15,16 +15,14 @@ body {
     font-family: 'Roboto Condensed', sans-serif;
     background-color: rgba(0, 0, 0, 0.9); /* 90% opaque black */
     color: white;
-    padding: 10px; /* Add padding for spacing */
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap; /* Enable wrapping on smaller screens */
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-sizing: border-box; /* Ensure padding is included in width */
 }
 
 /* Navbar container */
@@ -39,13 +37,12 @@ body {
 
 /* Navbar links */
 .navbar a {
-    display: block; /* Make the link a block element */
-    padding: 10px 15px; /* Space inside the link */
+    display: block;
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s;
-    border-radius: 0px;
 }
 
 /* Highlight on hover */
@@ -67,27 +64,25 @@ body {
     border-radius: 3px;
 }
 
-/* Media Queries for Mobile */
+/* Media Query to Hide Other Links on Mobile */
 @media (max-width: 768px) {
-    .top-bar {
-        flex-direction: column; /* Stack elements vertically */
-        padding: 10px; /* Reduce padding for smaller screens */
-    }
-
     .navbar ul {
-        flex-direction: column; /* Stack menu items vertically */
-        gap: 5px; /* Adjust gap between links */
+        display: none; /* Hide the navbar links on mobile */
     }
 
-    .navbar a {
-        padding: 8px 10px; /* Smaller padding for mobile */
-        font-size: 14px; /* Adjust font size for mobile */
+    .navbar ul.contact-link {
+        display: block; /* Ensure "Contact Me" is visible */
+    }
+
+    .top-bar {
+        justify-content: space-between; /* Ensure proper spacing */
     }
 
     .language-selector {
-        padding-right: 0;
+        margin-left: auto; /* Push the language selector to the right */
     }
 }
+
 
 
 /* Header Section */
