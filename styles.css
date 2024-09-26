@@ -94,8 +94,6 @@ html, body {
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
     }
-
-
     
 }
 
@@ -375,7 +373,6 @@ html, body {
 
 .skills-categories-container{
     width: 100%; /* Make sure the container takes the full width of the page */
-    max-width: 1200px; /* Optional: Limit max width to avoid stretching on large screens */
     margin: 0 auto; /* Center the container */
 }
 
@@ -390,9 +387,8 @@ html, body {
 
 /* Use Grid for Skill Categories */
 .skills-categories {
-    display: grid;
-    grid-gap: 50px;
-    grid-template-columns: 1fr;
+    display: block;
+    gap: 10px;
 }
 
 .skills-category {
