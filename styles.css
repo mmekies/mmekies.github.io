@@ -230,7 +230,7 @@ body {
 /* Experience Section */
 .experience-container {
     display: flex;
-    width: auto;
+    margin: 0 auto;
     justify-content: center; /* Center the grid horizontally */
     flex-direction: column;
     gap: 20px;
@@ -445,6 +445,8 @@ body {
 /* Parent container for certificates */
 .certificates-container {
     display: flex;
+    margin: 0 auto;
+    width: auto;
     justify-content: center; /* Align items to the left */
     flex-direction: column;
     gap: 20px; /* Space between title and grid */
@@ -459,8 +461,10 @@ body {
 
 /* Certificate item styling */
 .certificate-item {
-    width: 400px; /* Width of the block */
-    height: 300px; /* Height of the block */
+    max-width: 400px; /* Width of the block */
+    max-height: 300px; /* Height of the block */
+    min-width: 100px;
+    max-height: 75px;
     border-radius: 15px; /* Rounded corners */
     overflow: hidden;
     display: flex; /* Flex display for hover effect */
@@ -506,6 +510,7 @@ body {
 
 .education-container{
     display: flex;
+    margin: 0 auto;
     width: auto;
     justify-content: center; /* Center the grid horizontally */
     flex-direction: column;
