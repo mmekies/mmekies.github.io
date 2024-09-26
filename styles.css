@@ -49,9 +49,13 @@ body {
     background-color: #b81c1c; /* Highlight color */
 }
 
+.language-selector{
+    padding-right: 20px;
+}
 /* Language selector */
 .language-selector select {
     background-color: #333;
+    font-family: 'Roboto Condensed', sans-serif;
     color: white;
     border: none;
     padding: 5px;
@@ -313,7 +317,7 @@ body {
     position: relative;
 }
 
-.skill-section::after{
+.skills-section::after{
     content: "";
     position: absolute;
     bottom: 0;
