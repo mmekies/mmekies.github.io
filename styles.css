@@ -94,7 +94,9 @@ html, body {
     }
     
     .skills-categories{
-        grid-template-columns: repeat(3, 1fr); /* Two columns for larger screens */
+        display: grid;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -386,19 +388,15 @@ html, body {
 
 /* Use Grid for Skill Categories */
 .skills-categories {
-    display: grid;
-    align-items: center;
-    justify-items: center;
-    gap: 50px;
+    display: block;
 }
 
 .skills-category {
+    padding: 1rem;
     background-color: #fff;
-    padding: 20px;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
-
 }
 
 .skills-category h3 {
