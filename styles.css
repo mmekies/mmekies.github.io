@@ -264,7 +264,7 @@ html, body {
 .experience-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 400px width items */
-    gap: 20px;
+    gap: 75px;
     justify-content: center;
     display: flex;
 }
@@ -380,8 +380,8 @@ html, body {
 .skills-categories {
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
-    gap: 20px; /* Space between categories */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid with min width */
+    gap: 50px; /* Space between categories */
     justify-content: center;
     display: flex;
 }
