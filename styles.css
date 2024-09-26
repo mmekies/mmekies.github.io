@@ -92,8 +92,7 @@
     .skills-categories{
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
     }
 
     .responsive-three-columns{
@@ -388,7 +387,6 @@
 .skills-container {
     width: 100%;
     margin: 0 auto; /* Center the container */
-    display: flex;
     flex-direction: column; /* Stack title and grid */
     gap: 50px;
 }
@@ -404,7 +402,9 @@
 
 /* Use Grid for Skill Categories */
 .skills-categories {
-    display: block;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
 }
 
 .skills-category {
