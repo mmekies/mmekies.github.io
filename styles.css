@@ -44,7 +44,7 @@ html, body {
 /* Navbar links */
 .navbar a {
     display: block;
-    padding: 10px px;
+    padding: 10px 15px;
     color: white;
     text-decoration: none;
     font-weight: bold;
