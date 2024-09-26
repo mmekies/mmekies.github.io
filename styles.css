@@ -242,9 +242,10 @@ body {
 /* Experience Section */
 .experience-container {
     display: flex;
-    flex-direction: column;
+    width: auto;
     justify-content: center; /* Center the grid horizontally */
-    gap: 100px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .experience-title{
@@ -517,9 +518,10 @@ body {
 
 .education-container{
     display: flex;
-    justify-content: left; /* Align items to the left */
+    width: auto;
+    justify-content: center; /* Center the grid horizontally */
     flex-direction: column;
-    gap: 20px; /* Space between title and grid */
+    gap: 20px;
 }
 
 .education-section::after{
