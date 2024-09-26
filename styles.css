@@ -382,6 +382,8 @@ html, body {
     width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
     gap: 20px; /* Space between categories */
+    justify-content: center;
+    display: flex;
 }
 
 .skills-category {
