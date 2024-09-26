@@ -92,6 +92,10 @@ html, body {
     .experience-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     }
+    
+    .skills-categories{
+        grid-template-columns: repeat(3, 1fr); /* Two columns for larger screens */
+    }
 }
 
 
@@ -383,7 +387,9 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
-    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+    gap: 50px;
 }
 
 .skills-category {
