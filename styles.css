@@ -297,7 +297,7 @@ html, body {
 .experience-banner img {
     width: 100%;
     max-height: 180px;
-    object-fit: contain; /* Crops image if needed, but keeps aspect ratio */
+    object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
 /* Description part (bottom half) */
@@ -379,6 +379,7 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
+    width: 100%;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive grid with min width */
     gap: 20px; /* Space between categories */
 }
