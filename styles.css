@@ -551,8 +551,6 @@ body {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically fill space with min 400px width items */
     gap: 20px;
     justify-items: center; /* Ensure grid items are centered */
-    padding-left: 5%;
-    padding-right: 10%;
     width: 100%;
 }
 
@@ -577,7 +575,7 @@ body {
     object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
-.project-icon {
+.projects-icons {
     width: 40px; /* Set the initial size */
     height: 40px;
     transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
@@ -585,7 +583,7 @@ body {
     justify-content: center;
 }
 
-.project-icon:hover {
+.projects-icons:hover {
     transform: scale(1.2); /* Increase size on hover */
 }
 /* Description part (bottom half) */
