@@ -310,7 +310,7 @@ body {
 .skills-section {
     padding: 50px;
     background-color: rgb(227, 227, 227);
-    display: flex;
+    position: relative;
 }
 
 .skill-section ::after{
@@ -376,6 +376,7 @@ body {
 .certificates-section{
     background-color: rgb(227, 227, 227); /* Same background */
     padding: 50px; /* Same padding */
+    position: relative;
 }
 
 .certificate-title{
@@ -434,6 +435,7 @@ body {
 .education-section {
     background-color: rgb(227, 227, 227); /* Same background */
     padding: 50px; /* Same padding */
+    position: relative;
 }
 
 .education-container{
@@ -486,6 +488,7 @@ body {
 .contact-section {
     background-color: rgb(227, 227, 227); /* Same background color */
     padding: 50px; /* Same padding */
+    position: relative;
 }
 
 
