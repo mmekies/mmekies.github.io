@@ -267,6 +267,7 @@ body {
     width: 100%; /* Use 100% to fill the grid cell */
     max-width: 500px; /* Ensure a maximum width */
     max-height: 300px; /* Fixed height */
+    aspect-ratio: 5/3;
     border-radius: 15px;
     border: 2px solid black;
     background-color: #fff;
@@ -288,7 +289,7 @@ body {
 .experience-banner img {
     width: 100%;
     max-height: 180px;
-    object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
+    object-fit: contain; /* Crops image if needed, but keeps aspect ratio */
 }
 
 /* Description part (bottom half) */
@@ -486,7 +487,7 @@ body {
 .certificate-banner img {
     width: 100%; /* Full width of the block */
     height: 100%; /* Full height of the block */
-    object-fit: cover; /* Ensure image covers the area without stretching */
+    object-fit: contain; /* Ensure image covers the area without stretching */
 }
 
 /* Hover Effect for certificate */
