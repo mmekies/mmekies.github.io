@@ -262,11 +262,9 @@ html, body {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /* Automatically fill space with min 500px width items */
-    gap: 75px;
-    justify-content: center;  /* Center grid items horizontally */
-    justify-items: center;    /* Center individual items in their grid cells */
-    align-items: center;      /* Center items vertically within their grid cells */
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 400px;
+    grid-gap: 50px;
 }
 
 /* Experience item styling */
@@ -384,6 +382,8 @@ html, body {
     justify-content: center;  /* Center grid items horizontally */
     justify-items: center;    /* Center individual items in their grid cells */
     align-items: center;      /* Center items vertically within their grid cells */
+    align-content: center;
+    height: 100vh;
 }
 
 .skills-category {
@@ -480,6 +480,8 @@ html, body {
     justify-content: center;  /* Center grid items horizontally */
     justify-items: center;    /* Center individual items in their grid cells */
     align-items: center;      /* Center items vertically within their grid cells */
+    align-content: center;
+    height: 100vh;
 }
 
 /* Certificate item styling */
