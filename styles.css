@@ -262,9 +262,9 @@ html, body {
 
 .experience-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 400px;
-    grid-gap: 50px;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 100px;
+    gap: 50px;
 }
 
 /* Experience item styling */
@@ -377,13 +377,9 @@ html, body {
 /* Use Grid for Skill Categories */
 .skills-categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Responsive grid with min width */
-    gap: 50px; /* Space between categories */
-    justify-content: center;  /* Center grid items horizontally */
-    justify-items: center;    /* Center individual items in their grid cells */
-    align-items: center;      /* Center items vertically within their grid cells */
-    align-content: center;
-    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 400px;
+    grid-gap: 20px;
 }
 
 .skills-category {
@@ -392,6 +388,7 @@ html, body {
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+
 }
 
 .skills-category h3 {
