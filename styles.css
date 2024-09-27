@@ -84,8 +84,15 @@ html, body {
 
     /* Use Grid for Skill Categories */
     .skills-categories {
-        display: block;
-        gap: 10px;
+        grid-template-columns: 1fr; /* Stack in one column on very small screens */
+    }
+
+    .certificates-grid{
+        grid-template-columns: 1fr; /* Stack in one column on very small screens */
+    }
+
+    .education-grid{
+        grid-template-columns: 1fr; /* Stack in one column on very small screens */
     }
 }
 
@@ -93,12 +100,6 @@ html, body {
 
     .experience-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
-    }
-
-    .skills-categories{
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
     }
     
 }
@@ -392,11 +393,18 @@ html, body {
     color: black;
 }
 
+.skills-categories{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr; /* Three equal columns */
+}
+
 
 .skills-category {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
     /*max-width: 400px;*/
 }
 
@@ -407,6 +415,8 @@ html, body {
 
 .skill {
     margin-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .skill span {
@@ -472,22 +482,21 @@ html, body {
 /* Parent container for certificates */
 .certificates-container {
     width: 100%;
-    display: flex;
-    margin: 0 auto;
-    flex-direction: column;
-    gap: 50px; /* Space between title and grid */
+    flex-direction: column; /* Stack title and grid */
+    gap: 50px;
+}
+
+.certificates-grid-container{
+    width: 100%; /* Make sure the container takes the full width of the page */
+    margin: 0 auto; /* Center the container */
+    max-width: 1400px;
 }
 
 /* Certificates grid layout */
 .certificates-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 20px; /* Space between certificates */
-    justify-content: center;  /* Center grid items horizontally */
-    justify-items: center;    /* Center individual items in their grid cells */
-    align-items: center;      /* Center items vertically within their grid cells */
-    align-content: center;
-    height: 100vh;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
 }
 
 /* Certificate item styling */
@@ -495,8 +504,6 @@ html, body {
     max-width: 400px;
     max-height: 300px; /* Height of the block */
     aspect-ratio: 4/3;
-    border-radius: 0px; /* Rounded corners */
-    overflow: hidden;
     display: flex; /* Flex display for hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -539,22 +546,9 @@ html, body {
 
 
 .education-container{
-    display: flex;
-    margin: 0 auto;
-    width: auto;
-    justify-content: center; /* Center the grid horizontally */
-    flex-direction: column;
-    gap: 20px;
-}
-
-.education-section::after{
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 10%; /* Adjust as needed to add padding on the left */
-    right: 10%; /* Adjust as needed to add padding on the right */
-    height: 2px; /* The thickness of the border */
-    background-color: #555; /* The color of the border */
+    width: 100%;
+    flex-direction: column; /* Stack title and grid */
+    gap: 50px;
 }
 
 .education-title{
@@ -566,13 +560,17 @@ html, body {
     color: black;
 }
 
+.education-grid-container{
+    width: 100%; /* Make sure the container takes the full width of the page */
+    margin: 0 auto; /* Center the container */
+    max-width: 1400px;
+}
+
 /* Certificates grid layout */
 .education-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    justify-items: center; /* Ensure grid items are centered */
-    width: 100%;
-    gap: 20px; /* Space between certificates */
+    grid-gap: 10px;
+    grid-template-columns: 1fr; /* Three equal columns */
 }
 
 .education-item h3 {
