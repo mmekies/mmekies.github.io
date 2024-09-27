@@ -504,7 +504,6 @@ html, body {
     max-width: 400px;
     max-height: 300px; /* Height of the block */
     aspect-ratio: 4/3;
-    display: flex; /* Flex display for hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -570,7 +569,7 @@ html, body {
 .education-grid {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: 1fr; /* Three equal columns */
+    grid-template-columns: 1fr 1fr;
 }
 
 .education-item h3 {
