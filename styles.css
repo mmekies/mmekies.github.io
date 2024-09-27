@@ -573,11 +573,24 @@ html, body {
     grid-template-columns: 1fr 1fr;
 }
 
-.education-item{
+/* Flex layout for each education item */
+.education-item {
+    display: flex; /* Set flexbox layout */
+    align-items: center; /* Vertically center the content */
+    gap: 20px; /* Space between the logo and the text */
     margin: auto;
+    width: 100%;
 }
 
-.education-item h3 {
+/* Style the logo */
+.education-logo {
+    width: 60px; /* Adjust the logo size */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure it fits within the box */
+}
+
+/* Education text styles */
+.education-text h3 {
     font-size: 18px;
     margin: 5px 0;
     font-family: 'Roboto Condensed', sans-serif;
@@ -585,12 +598,13 @@ html, body {
     color: #333;
 }
 
-.education-item p {
+.education-text p {
     font-size: 14px;
     margin: 2px 0;
     color: #666;
     font-style: italic;
 }
+
 
 .projects-section {
     background-color: rgb(227, 227, 227);
