@@ -81,6 +81,12 @@ html, body {
         text-align: center;
         overflow: hidden; /* Ensure the blurred background doesn't overflow */
     }
+
+    /* Use Grid for Skill Categories */
+    .skills-categories {
+        display: block;
+        gap: 10px;
+    }
 }
 
 @media (min-width: 768px) { /* Adjust the width based on your design needs */
@@ -385,11 +391,6 @@ html, body {
     color: black;
 }
 
-/* Use Grid for Skill Categories */
-.skills-categories {
-    display: block;
-    gap: 10px;
-}
 
 .skills-category {
     background-color: #fff;
