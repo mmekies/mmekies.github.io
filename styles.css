@@ -380,6 +380,7 @@ html, body {
 .skills-categories-container{
     width: 100%; /* Make sure the container takes the full width of the page */
     margin: 0 auto; /* Center the container */
+    max-width: 1400px;
 }
 
 .skills-title {
