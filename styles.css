@@ -573,6 +573,10 @@ html, body {
     grid-template-columns: 1fr 1fr;
 }
 
+.education-item{
+    margin: auto;
+}
+
 .education-item h3 {
     font-size: 18px;
     margin: 5px 0;
