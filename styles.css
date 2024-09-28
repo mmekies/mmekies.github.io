@@ -67,9 +67,11 @@ html, body {
 
 /* Media Query to Hide Other Links on Mobile */
 @media (max-width: 768px) {
+
     .top-bar {
         display: none; /* Hide the top bar on mobile devices */
     }
+
     .header-section{
         position: relative;
         height: 500px; /* Adjust height as needed */
@@ -82,9 +84,32 @@ html, body {
         overflow: hidden; /* Ensure the blurred background doesn't overflow */
     }
 
+    /* Show the down arrow button */
+    .scroll-down {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        margin-top: 20px !important;
+        z-index: 2 !important;
+        transition: transform 0.3s ease !important;
+    }
+
+    /* Down Arrow Icon Styling */
+    .scroll-down img {
+        width: 30px !important; /* Same size as social icons */
+        height: 30px !important;
+        transition: transform 0.3s ease !important;
+        box-shadow: 2px !important;
+    }
+
+    /* Hover Effect */
+    .scroll-down img:hover {
+        transform: scale(1.2) !important;
+    }
+
     /* Use Grid for Skill Categories */
     .skills-categories {
-        grid-template-columns: 1fr; /* Stack in one column on very small screens */
+        grid-template-columns: 1fr !important; /* Stack in one column on very small screens */
     }
 
     .certificates-grid{
@@ -92,7 +117,7 @@ html, body {
     }
 
     .education-grid{
-        grid-template-columns: 1fr; /* Stack in one column on very small screens */
+        grid-template-columns: 1fr !important; /* Stack in one column on very small screens */
     }
 }
 
@@ -101,7 +126,7 @@ html, body {
     .experience-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
     }
-    
+
 }
 
 
@@ -171,10 +196,13 @@ html, body {
     transform: scale(1.2);
 }
 
+.scroll-down {
+    display: none; /* Hidden on larger screens */
+}
 /* About Me section */
 .about-me {
-    padding: 100px 20px;
-    background: linear-gradient(to bottom, black, rgb(227, 227, 227)); /* Gradient from black to light grey */
+    padding: 50px;
+    background: linear-gradient(to bottom, black, rgb(227, 227, 227) 50%); /* Gradient from black to light grey */
     display: flex;
     justify-content: center;
 }
@@ -183,12 +211,12 @@ html, body {
     display: flex;
     align-items: center;
     gap: 20px; /* Space between the image and text */
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .profile-pic {
-    min-width: 40px;
-    min-height: 40px;
+    min-width: 150px;
+    min-height: 150px;
     max-width: 300px;
     max-height: 300px;
     border-radius: 50%;
@@ -197,18 +225,22 @@ html, body {
 
 .about-text {
     font-family: 'Roboto Condensed', sans-serif;
-    color: #ffffff; /* White text color */
+    color: black; /* White text color */
     max-width: 500px;
 }
 
-.about-text h1 {
-    margin-bottom: 10px;
-    font-weight: bolder;
+.about-me-title{
+    font-size: 36px;
+    font-family: "Antonio", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: black;
 }
 
 .about-text p {
     margin-bottom: 20px;
-    color: white;
+    color: black;
     font-weight: bold;
 }
 
@@ -216,7 +248,7 @@ html, body {
 /* CV Button */
 .cv-button {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 10px 20px; /* Space inside the button */
     font-size: 16px;
     font-weight: bold;
@@ -245,7 +277,9 @@ html, body {
 
 .experience-section {
     background-color: rgb(227, 227, 227);
-    padding: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     position: relative; /* Ensures the pseudo-element is positioned relative to this container */
 }
 
@@ -311,6 +345,8 @@ html, body {
 .experience-banner img {
     width: 100%;
     max-height: 180px;
+    border-top-left-radius: 15px;  /* Only top-left corner */
+    border-top-right-radius: 15px; /* Only top-right corner */
     object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
@@ -575,7 +611,6 @@ html, body {
 
 /* Flex layout for each education item */
 .education-item {
-    display: flex; /* Set flexbox layout */
     align-items: center; /* Vertically center the content */
     gap: 20px; /* Space between the logo and the text */
     margin: auto;
@@ -606,39 +641,31 @@ html, body {
 }
 
 
+/* Section styling */
 .projects-section {
     background-color: rgb(227, 227, 227);
     padding: 50px;
-    position: relative; /* Ensures the pseudo-element is positioned relative to this container */
+    position: relative;
 }
 
 .projects-section::after {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 10%; /* Adjust as needed to add padding on the left */
-    right: 10%; /* Adjust as needed to add padding on the right */
-    height: 2px; /* The thickness of the border */
-    background-color: #555; /* The color of the border */
+    left: 10%;
+    right: 10%;
+    height: 2px;
+    background-color: #555;
 }
-
 
 .projects-container {
     display: flex;
-    width: auto;
-    justify-content: center; /* Center the grid horizontally */
     flex-direction: column;
     gap: 20px;
+    align-items: center;
 }
 
-.projects-section-text {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #ffffff; /* White text color */
-    text-align: center;
-    padding-top: 20px;
-}
-
-.projects-title{
+.projects-title {
     font-size: 36px;
     font-family: "Antonio", sans-serif;
     text-transform: uppercase;
@@ -647,90 +674,99 @@ html, body {
     color: black;
 }
 
+.projects-grid-container{
+    margin: 20px auto;
+}
+
 /* Grid layout */
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Automatically fill space with min 400px width items */
-    gap: 20px;
-    justify-items: center; /* Ensure grid items are centered */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Min width 300px */
+    gap: 50px; /* Spacing between grid items */
     width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Experience item styling */
+/* Project items */
 .projects-item {
-    width: 100%; /* Use 100% to fill the grid cell */
-    max-width: 300; /* Ensure a maximum width */
-    max-height: 400; /* Fixed height */
-    border-radius: 15px;
+    background-color: white;
     border: 2px solid black;
-    overflow: hidden;
-    background-color: #fff;
+    border-radius: 15px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition for smooth scaling */
+    align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 400px; /* Maximum width for each project item */
+    box-sizing: border-box; /* Include padding and border in the total width */
 }
 
-/* Banner Image */
+.projects-item:hover {
+    transform: scale(1.05); /* Subtle hover effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Project image (banner) */
+.projects-banner {
+    width: 100%;
+    position: relative; /* Parent container must be positioned */
+    overflow: hidden; /* Ensure the image stays within the container */
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: auto;
+}
+
 .projects-banner img {
     width: 100%;
-    height: 300;
-    object-fit:fill;
+    height: auto; /* Allow the image to resize according to width */
+    object-fit: cover; /* Ensures image scales and crops properly */
 }
 
+/* Project icons */
 .projects-icons {
-    gap: 10px;
     display: flex;
     justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    flex-grow: 1; /* Allow this section to grow and shrink */
 }
 
-.project-icon{
-    width: 50px; /* Set the initial size */
-    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+.project-icon {
+    width: 50px;
+    transition: transform 0.3s ease;
+    color: #000;
 }
 
 .project-icon:hover {
-    transform: scale(1.2); /* Increase size on hover */
-}
-/* Description part (bottom half) */
-.projects-description {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: black;
-    padding: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-decoration: none;
-    text-align: left;
-    text-decoration: none;
+    transform: scale(1.2);
 }
 
-.projects-description h3 {
-    font-size: 18px;
-    font-weight: bold;
-    text-decoration: none;
-    margin: 0 0 10px 0;
+/* Media queries for responsive behavior */
+
+/* Adjust for screens smaller than 600px */
+@media (max-width: 600px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack items in one column */
+    }
+
+    .projects-item {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    /* Allow more flexible height for small screens */
+    .projects-banner {
+        height: auto;
+    }
+
+    .projects-icons {
+        padding: 5px 0; /* Reduce padding on smaller screens */
+    }
 }
 
-.projects-description .details {
-    font-size: 14px;
-    text-decoration: none;
-    margin: 0 0 10px 0;
-}
-
-.projects-description .date {
-    font-size: 12px;
-    font-style: italic;
-    text-decoration: none;
-    color: #555;
-    margin-top: auto;
-}
-
-/* Experience link styling */
-.projects-link {
-    text-decoration: none;
-    color: inherit; /* Keeps text styling consistent */
-}
 
 .contact-section {
     background-color: rgb(227, 227, 227);
