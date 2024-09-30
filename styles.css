@@ -248,6 +248,7 @@ html, body {
 .about-container {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 20px; /* Space between the image and text */
     max-width: 1200px;
 }
