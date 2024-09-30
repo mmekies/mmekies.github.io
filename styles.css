@@ -74,7 +74,7 @@ html, body {
 
     .header-section{
         position: relative;
-        height: 500px; /* Adjust height as needed */
+        height: 500px !important; /* Adjust height as needed */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -125,6 +125,10 @@ html, body {
 
     .experience-grid {
         grid-template-columns: repeat(2, 1fr); /* Two columns for larger screens */
+    }
+
+    .language-selector-mobile {
+        display: none !important; /* Hide on larger screens */
     }
 
 }
@@ -199,13 +203,47 @@ html, body {
 .scroll-down {
     display: none; /* Hidden on larger screens */
 }
+
+.language-selector-mobile {
+    position: fixed;
+    font-family: 'Roboto Condensed', sans-serif;
+    top: 10px;        /* Adjust the distance from the top */
+    right: 10px;      /* Adjust the distance from the right */
+    z-index: 10;      /* Ensure it's on top of other elements */
+}
+
+/* Language Selector Dropdown */
+.language-selector-mobile select {
+    background-color: #33333363; /* Dark background */
+    color: white;           /* White text */
+    border: none;           /* Remove border */
+    padding: 8px 8px;      /* Padding inside the dropdown */
+    border-radius: 3px;     /* Rounded corners */
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    font-size: 16px;        /* Ensure legibility */
+}
 /* About Me section */
-.about-me {
+.about-me-section {
     padding: 50px;
     background: linear-gradient(to bottom, black, rgb(227, 227, 227) 50%); /* Gradient from black to light grey */
     display: flex;
     justify-content: center;
+    flex-direction: column;
+
 }
+
+.about-me-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 10%; 
+    right: 10%;
+    height: 2px; 
+    background-color: #555; 
+}
+
+
 
 .about-container {
     display: flex;
@@ -239,7 +277,7 @@ html, body {
 }
 
 .about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     color: black;
     font-weight: bold;
 }
@@ -248,6 +286,7 @@ html, body {
 /* CV Button */
 .cv-button {
     display: inline-block;
+    font-family: 'Roboto Condensed', sans-serif;
     margin-top: 20px;
     padding: 10px 20px; /* Space inside the button */
     font-size: 16px;
@@ -271,7 +310,7 @@ html, body {
     font-family: 'Roboto Condensed', sans-serif;
     color: #ffffff; /* White text color */
     text-align: center;
-    padding-top: 20px;
+    padding-top: 0px;
 }
 
 
@@ -345,8 +384,8 @@ html, body {
 .experience-banner img {
     width: 100%;
     max-height: 180px;
-    border-top-left-radius: 15px;  /* Only top-left corner */
-    border-top-right-radius: 15px; /* Only top-right corner */
+    border-top-left-radius: 12px;  /* Only top-left corner */
+    border-top-right-radius: 12px; /* Only top-right corner */
     object-fit: cover; /* Crops image if needed, but keeps aspect ratio */
 }
 
@@ -713,8 +752,8 @@ html, body {
     width: 100%;
     position: relative; /* Parent container must be positioned */
     overflow: hidden; /* Ensure the image stays within the container */
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     height: auto;
 }
 

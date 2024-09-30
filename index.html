@@ -15,13 +15,13 @@
     <header class="top-bar">
         <nav class="navbar">
             <ul>
-                <li><a href="#about-me">ABOUT ME</a></li>
-                <li><a href="#experience">EXPERIENCE</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#certificates">CERTIFICATES</a></li>
-                <li><a href="#education">EDUCATION</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li class="contact-link"><a href="#contact-me">CONTACT ME</a></li>
+                <li><a id="aboutmetopbar" href="#about-me">ABOUT ME</a></li>
+                <li><a id="experiencetopbar" href="#experience">EXPERIENCE</a></li>
+                <li><a id="projectstopbar" href="#projects">PROJECTS</a></li>
+                <li><a id="skillstopbar" href="#skills">SKILLS</a></li>
+                <li><a id="certificatestopbar"href="#certificates">CERTIFICATES</a></li>
+                <li><a id="educationtopbar" href="#education">EDUCATION</a></li>
+                <li><a id="contacttopbar" href="#contact-me">CONTACT ME</a></li>
             </ul>
         </nav>
         <div class="language-selector">
@@ -34,6 +34,14 @@
     </header>
     
     <div class="header-section">
+        <!-- Language Selector for Mobile (positioned top-right) -->
+        <div class="language-selector-mobile">
+            <select id="language-mobile">
+                <option value="en" selected>English</option>
+                <option value="fr">French</option>
+            </select>
+        </div>
+        
         <div class="header-content">
             <h1 class="header-name">Michael Mekies</h1>
             <div class="social-icons">
@@ -43,22 +51,24 @@
                 <a href="https://magecaster.itch.io/" target="_blank">
                     <img src="images/itchio-icon.png" alt="Itchio">
                 </a>
-                <!-- Add more icons as needed -->
             </div>
-            <a href="CVs/CV_ EndSeptember2024.pdf" download class="cv-button">Download CV</a>
+            <a href="CVs/CV_ EndSeptember2024.pdf" download id="cvbuttontext" class="cv-button">DOWNLOAD CV</a>
             <a href="#contact-me" class="scroll-down">
                 <img src="images/arrow-down.png" alt="Down Arrow">
             </a>
         </div>
     </div>
     
+    
     <!-- About Me Section -->
-    <section id="about-me" class="about-me">
+    <section id="about-me" class="about-me-section">
+        <div class="about-me-title">
+            <h2 id="aboutmetitle">ABOUT ME</h2>
+        </div>
         <div class="about-container">
             <img src="images/HeadShot2.jpg" alt="Your Photo" class="profile-pic">
             <div class="about-text">
-                <h1>ABOUT ME</h1>
-                <p>
+                <p id="aboutmedescription">
                     Hi! I'm Michael Mekies, a passionate full-stack developer with over three years of experience in AR technology. 
                     I enjoy creating immersive experiences and solving challenging problems in the AR space.
                 </p>
@@ -71,7 +81,7 @@
         <div class="experience-section-text">
             <div class="experience-container">
                 <div class="experience-title">
-                    <h2>EXPERIENCE</h2>
+                    <h2 id="experiencetitle">EXPERIENCE</h2>
                 </div>
                 <div class="experience-grid">
                     <!-- ARVision Games (ARiddle) Experience -->
@@ -81,9 +91,9 @@
                                 <img src="images/ARVisionGamesBanner.png" alt="ARVision Games (ARiddle) Banner">
                             </div>
                             <div class="experience-description">
-                                <h3>Lead Full Stack Developer at ARVision Games</h3>
-                                <p class="details">Responsible for building ARiddle from the ground up, managing Git, DevOps, and successful launch on iOS and Google Play.</p>
-                                <p class="date">2021 - Present</p>
+                                <h3 id="arvisionjobtitle">Lead Full Stack Developer at ARVision Games</h3>
+                                <p id = "arvisionjobdecription" class="details">Responsible for building ARiddle from the ground up, managing Git, DevOps, and successful launch on iOS and Google Play.</p>
+                                <p id = "arvisionjobdate" class="date">2021 - Present</p>
                             </div>
                         </div>
                     </a>
@@ -94,9 +104,9 @@
                                 <img src="images/1711480642224.png" alt="Afria Studios (Fly Vella) Banner">
                             </div>
                             <div class="experience-description">
-                                <h3>Founder and Lead Developer at Afia Studios</h3>
-                                <p class="details">Developed and released Fly Vella, a platform-based game, using Unity and a custom in-house framework.</p>
-                                <p class="date">2024 - Present</p>
+                                <h3 id = "afiajobtitle">Founder and Lead Developer at Afia Studios</h3>
+                                <p id = "afiajobdescription" class="details">Developed and released Fly Vella, a platform-based game, using Unity and a custom in-house framework.</p>
+                                <p id = "afiajobdata" class="date">2024 - Present</p>
                             </div>
                         </div>
                     </a>
@@ -106,137 +116,10 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
-        <div class="skills-container">
-                <div class="skills-title">
-                    <h2>SKILLS</h2>
-                </div>
-                <div class="skills-categories-container">
-                    <div class="skills-categories">
-                        <div class="skills-category">
-                            <h3>PROGRAMMING LANGUAGES</h3>
-                            <div class="skill">
-                                <span>C#</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 95%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>C++</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 85%;"></div> 
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>C</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 85%;"></div>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="skills-category">
-                            <h3>FRONT END DEVELOPMENT</h3>
-                            <div class="skill">
-                                <span>HTML</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 80%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>CSS</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 70%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>JavaScript</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 90%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    
-                        <div class="skills-category">
-                            <h3>BACK END DEVELOPMENT</h3>
-                            <div class="skill">
-                                <span>Node.js</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 75%;"></div>
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>Python</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 65%;"></div> 
-                                </div>
-                            </div>
-                            <div class="skill">
-                                <span>Ruby</span>
-                                <div class="progress">
-                                    <div class="progress-bar" style="width: 60%;"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-        </div>
-    </section>
-    
-    <section id="certificates" class="certificates-section">
-        <div class="certificates-container">
-            <div class="certificate-title">
-                <h2>CERTIFICATES</h2>
-            </div>
-            <div class="certificates-grid-container">
-                <div class="certificates-grid">
-                    <!-- First certificate block -->
-                <a href="https://learn.codesignal.com/certificates/cm0v2gbbl002cdfyotbef3k37/course-paths/13" class="certificate-item" target="_blank">
-                    <div class="certificate-banner">
-                        <img src="images/frontendreactCertificate.png" alt="Front-End Developer Certificate">
-                    </div>
-                </a>
-                        <!-- Add more certificate items as needed -->
-            </div>
-            </div>
-            
-        </div>
-    </section>  
-
-    <section id="education" class="education-section">
-        <div class="education-container">
-            <div class="education-title">
-                <h2>EDUCATION</h2>
-            </div>
-            <div class="education-grid-container">
-                <div class="education-grid">
-                    <div class="education-item">
-                        <img src="images/concordia-logo.png" alt="Concordia University Logo" class="education-logo">
-                        <div class="education-text">
-                            <h3>Concordia University</h3>
-                            <p>Bachelor's Degree in Computer Science</p>
-                            <p>Graduated: 2021</p>
-                        </div>
-                    </div>
-                    <div class="education-item">
-                        <img src="images/johnabbott-logo.png" alt="John Abbott College Logo" class="education-logo">
-                        <div class="education-text">
-                            <h3>John Abbott College</h3>
-                            <p>DEC in Applied Physics</p>
-                            <p>Graduated: 2017</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    
     <section id="projects" class="projects-section">
         <div class="projects-container">
             <div class="projects-title">
-                <h2>PROJECTS</h2>
+                <h2 id = "projectstitle">PROJECTS</h2>
             </div>
             <div class="projects-grid-container">
                 <div class="projects-grid">
@@ -270,21 +153,150 @@
                 </div>
             </div>
         </div>    
-    </section>    
+    </section>   
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="skills-container">
+                <div class="skills-title">
+                    <h2 id = "skilltitle">SKILLS</h2>
+                </div>
+                <div class="skills-categories-container">
+                    <div class="skills-categories">
+                        <div class="skills-category">
+                            <h3 id = "proglangtitle">PROGRAMMING LANGUAGES</h3>
+                            <div class="skill">
+                                <span>C#</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 95%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C++</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%;"></div> 
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>C</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%;"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="skills-category">
+                            <h3 id = "frontendtitle">FRONT END DEVELOPMENT</h3>
+                            <div class="skill">
+                                <span>HTML</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>CSS</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>JavaScript</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="skills-category">
+                            <h3 id = "backendtitle">BACK END DEVELOPMENT</h3>
+                            <div class="skill">
+                                <span>Node.js</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Python</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 65%;"></div> 
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <span>Ruby</span>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </section>
+    
+    <section id="certificates" class="certificates-section">
+        <div class="certificates-container">
+            <div class="certificate-title">
+                <h2 id = "certificatestitle">CERTIFICATES</h2>
+            </div>
+            <div class="certificates-grid-container">
+                <div class="certificates-grid">
+                    <!-- First certificate block -->
+                <a href="https://learn.codesignal.com/certificates/cm0v2gbbl002cdfyotbef3k37/course-paths/13" class="certificate-item" target="_blank">
+                    <div class="certificate-banner">
+                        <img src="images/frontendreactCertificate.png" alt="Front-End Developer Certificate">
+                    </div>
+                </a>
+                        <!-- Add more certificate items as needed -->
+            </div>
+            </div>
+            
+        </div>
+    </section>  
+
+    <section id="education" class="education-section">
+        <div class="education-container">
+            <div class="education-title">
+                <h2 id = "educationtitle">EDUCATION</h2>
+            </div>
+            <div class="education-grid-container">
+                <div class="education-grid">
+                    <div class="education-item">
+                        <img src="images/concordia-logo.png" alt="Concordia University Logo" class="education-logo">
+                        <div class="education-text">
+                            <h3 id = "concunititle">Concordia University</h3>
+                            <p id = "concunidescription">Bachelor's Degree in Computer Science</p>
+                            <p id = "concunigraddate">Graduated: 2021</p>
+                        </div>
+                    </div>
+                    <div class="education-item">
+                        <img src="images/johnabbott-logo.png" alt="John Abbott College Logo" class="education-logo">
+                        <div class="education-text">
+                            <h3 id = "johnabcoltitle">John Abbott College</h3>
+                            <p id = "johnabcoldeg">DSC in Applied Physics</p>
+                            <p id = "johnabcolgraddate">Graduated: 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+ 
     
     <!-- Contact Section -->
     <section  id="contact-me" class="contact-section">
         <div class="contact-container">
             <div class="contact-title">
-                <h2>CONTACT ME</h2>
+                <h2 id = "contactmetitle">CONTACT ME</h2>
             </div>
             <div class="contact-form-container">
                 <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Your Email" required />
-                    <textarea placeholder="Your Message" rows="5" required></textarea>
-                    <button type="submit" class="send-button">Send Message</button>
-                </form>
+                    <input type="text" id="formName" placeholder="Your Name" required />
+                    <input type="email" id="formEmail" placeholder="Your Email" required />
+                    <textarea id="formMessage" placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="send-button" id="formSubmitButton">Send Message</button>
+                </form>                
             </div>
         </div>
         <div class="copyright">
@@ -292,6 +304,18 @@
         </div>
     </section>
     
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "z83Ig8rbZnQmitUac",
+        });
+        })();
+    </script>
+
     <script src="script.js"></script>
 </body>
 </html>
