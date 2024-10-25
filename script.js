@@ -13,7 +13,7 @@ const languages = {
         cvbuttontext:"DOWNLOAD CV",
 
         aboutmetitle: "ABOUT ME",
-        aboutmedescription: "Hi! I'm Michael Mekies, a passionate full-stack developer with over three years of experience in AR technology. I enjoy creating immersive experiences and solving challenging problems in the AR space.",
+        aboutmedescription: "Hi! I'm Michael Mekies, an experienced Full Stack Developer and Unity Specialist with over three years in AR and mobile gaming.Skilled in C#, Unity, DevOps, and Git, I have a track record of leading projects from conception to launch, including multiplayer AR experiences. Passionate about interactive tech, I thrive on creating engaging, high-performance applications and enjoy collaborating across disciplines to bring innovative ideas to life.",
         
         experiencetitle:"EXPERIENCE",
         arvisionjobtitle:"Lead Full Stack Developer at ARVision Games",
