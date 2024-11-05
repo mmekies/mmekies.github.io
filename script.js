@@ -163,7 +163,14 @@ languageDropdown.addEventListener('change', changeLanguage);
 // Add event listener to the mobile language dropdown
 mobileLanguageDropdown.addEventListener('change', changeLanguage);
 
+function toggleCertificate(element) {
+    // Remove expanded class from any other expanded certificate
+    const expandedItems = document.querySelectorAll('.certificate-item.expanded');
+    expandedItems.forEach(item => item.classList.remove('expanded'));
 
+    // Toggle expanded class on clicked item
+    element.classList.toggle('expanded');
+}
 
 // Add an event listener for form submission
 document.querySelector('.contact-form').addEventListener('submit', function(event) {
